@@ -1,11 +1,16 @@
 import './stylesheets/main.css';
 import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './Home';
+
 
 function App() {
   return (
-    <div>
-      {/* add components here */}
-    </div>
+    <Routes>
+      <div>
+        <Route path="/" element={<Home />} />
+      </div>
+    </Routes>
   );
 }
 
