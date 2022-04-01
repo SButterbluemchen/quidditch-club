@@ -1,0 +1,14 @@
+.card {
+  border: 0.2rem solid black;
+  width: 15rem;
+  padding: 2rem;
+
+  .card-player {
+    @include flex-wrap(wrap, flex-start, flex-start);
+  }
+
+  .card-player--number {
+    @include headingstyle(600, h2);
+    margin-inline-end: 0.5rem;
+  }
+}
