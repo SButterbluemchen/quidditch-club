@@ -406,17 +406,25 @@ h5 {
 .card {
   border: 0.2rem solid black;
   width: 15rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .card .card-player {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  border: 0.2rem solid red;
 }
 .card .card-player--number {
   font-size: 1.5rem;
   -webkit-margin-end: 0.5rem;
           margin-inline-end: 0.5rem;
+}
+.card figure {
+  width: 10rem;
+  height: 14rem;
+}
+.card figure img {
+  width: 100%;
 }
 
 .card-section-players {
