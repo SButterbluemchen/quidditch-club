@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin headingstyle($weight, $size, $transform: null) {
+  font-weight: map-get($map: $fontweights, $key: $weight);
+  font-size: map-get($map: $fontsizes, $key: $size);
+  text-transform: $transform;
+}
+
+@mixin flex-wrap($wrap, $justify-content, $align-items: null) {
+  display: flex;
+  flex-wrap: $wrap;
+  justify-content: $justify-content;
+  $align-items: $align-items;
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 599px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint==desktopXL {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tv {
+    @media only screen and (min-width: 1600px) {
+      @content;
+    }
+  }
+}
+
+@mixin font-resize($fontsizes) {
+  @media only screen and (min-width: 900px) {
+    @each $fontsize, $value in $fontsizes {
+      font-size: $value * 1.3;
+    }
+  }
+}
+

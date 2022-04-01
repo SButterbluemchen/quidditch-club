@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// fonts
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$heading-font-stack: 'Poppins', sans-serif;
+
+// font size
+$fontsizes: (
+    "h1": 2rem,
+    "h2": 1.5rem,
+    "h3": 1.4rem,
+    "h4": 1.2rem,
+    "h5": 1.1rem,
+    "p": 1rem,
+    "small": 0.8rem,
+  );
+$fontweights: (
+    "extra-bold": 600,
+    "bold": 500,
+    "normal": 400,
+    "semi-light": 300,
+    "light": 200,
+  );
+
+// colors
+$primary-color: #0063A0;
+$secondary-color: #ffffff;
+$fourth-color: #71b8e43d;
+$text-color: #3c4549;
