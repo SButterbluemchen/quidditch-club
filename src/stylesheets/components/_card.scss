@@ -1,0 +1,23 @@
+.card {
+  border: 0.2rem solid black;
+  width: 15rem;
+  padding: 1rem;
+
+  .card-player {
+    @include flex-wrap(wrap, flex-start, flex-start);
+    border: 0.2rem solid red;
+  }
+
+  .card-player--number {
+    @include headingstyle(600, h2);
+    margin-inline-end: 0.5rem;
+  }
+
+  figure {
+    width: 10rem;
+    height: 14rem;
+    img {
+      width: 100%;
+    }
+  }
+}

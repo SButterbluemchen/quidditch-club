@@ -1,17 +1,17 @@
 import './stylesheets/main.css';
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './Home';
+// import { Routes, Route } from 'react-router-dom';
+// import Home from './Home';
+import Members from './Members';
 
 
-function App() {
+export default function App() {
   return (
-    <Routes>
-      <div>
-        <Route path="/" element={<Home />} />
-      </div>
-    </Routes>
+    // <Routes>
+    <div>
+      {/* <Route path="/" element={<Home />} /> */}
+      <Members />
+    </div>
+    // </Routes>
   );
 }
-
-export default App;
