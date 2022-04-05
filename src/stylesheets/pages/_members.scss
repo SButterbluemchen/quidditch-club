@@ -1,4 +1,4 @@
 .card-section-players {
-  @include flex-wrap(wrap, flex-start, flex-start);
+  @include flex-wrap(wrap, flex-start);
   gap: 2rem;
 }
