@@ -1,17 +1,17 @@
 import './stylesheets/main.css';
 import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
-// import Home from './Home';
-import Members from './Members';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Players from './Players';
 
 
 export default function App() {
   return (
-    // <Routes>
-    <div>
-      {/* <Route path="/" element={<Home />} /> */}
-      <Members />
-    </div>
-    // </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/players" element={<Players />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

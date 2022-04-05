@@ -5,7 +5,7 @@
   display: grid;
   overflow: hidden;
   background: $secondary-color;
-  justify-content: center;
+  // justify-content: center;
   &::before {
     content: "";
     position: absolute;

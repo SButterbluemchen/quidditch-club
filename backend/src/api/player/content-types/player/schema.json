@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "players",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "integer"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "broom": {
+      "type": "string"
+    },
+    "home": {
+      "type": "string"
+    },
+    "House2": {
+      "displayName": "House2",
+      "type": "component",
+      "repeatable": false,
+      "component": "poufsouffle.house2"
+    }
+  }
+}

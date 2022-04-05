@@ -403,7 +403,6 @@ h5 {
   display: grid;
   overflow: hidden;
   background: #FAF6F0;
-  justify-content: center;
 }
 .card::before {
   content: "";
@@ -500,6 +499,6 @@ h5 {
 .card-section-players {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 2rem;
 }/*# sourceMappingURL=main.css.map */

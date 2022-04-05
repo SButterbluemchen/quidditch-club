@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './components/Card';
 // import {useState} from 'react';
 
-export default function Members() {
+export default function Players() {
 
   const harryPotter = {
     'name': 'Harry Potter',
