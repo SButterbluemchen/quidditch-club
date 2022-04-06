@@ -9,7 +9,7 @@
   text-transform: $transform;
 }
 
-@mixin flex-wrap($wrap, $justify-content, $align-items: null) {
+@mixin flex-wrap($wrap, $justify-content, $align-items) {
   display: flex;
   flex-wrap: $wrap;
   justify-content: $justify-content;
