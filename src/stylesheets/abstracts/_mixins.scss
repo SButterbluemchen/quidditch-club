@@ -9,12 +9,13 @@
   text-transform: $transform;
 }
 
-@mixin flex-wrap($wrap, $justify-content, $align-items) {
+@mixin flex-wrap($wrap, $justify-content, $align-items: null) {
   display: flex;
   flex-wrap: $wrap;
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
 
 @mixin media($breakpoint) {
   @if $breakpoint==mobile {

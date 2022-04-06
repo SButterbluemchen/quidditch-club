@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './components/Card';
+import Card from '../components/Card';
 
 export default function Members() {
 
@@ -34,10 +34,10 @@ export default function Members() {
       <h2>Notre équipe de Quidditch</h2>
       <h4>Attrapeur</h4>
       <article className="card-section-players">
-        <Card 
+        <Card
           info= {harryPotter}
         />
-        <Card 
+        <Card
           info= {{
             'name': 'Hermione Granger',
             'alternate_names': [],
