@@ -6,6 +6,12 @@
   overflow: hidden;
   background: $secondary-color;
   justify-content: center;
+  transition: 0.2s ease;
+  @include media(desktop){
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
   &::before {
     content: "";
     position: absolute;
@@ -41,7 +47,6 @@
     height: 4rem;
     transition: 0.5s ease;
     background: $secondary-color;
-
     &.active {
       height: 60%;
       transition: height 0.5s ease-in-out;

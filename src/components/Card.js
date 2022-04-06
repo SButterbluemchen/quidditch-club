@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
+import PictoCard from './PictoCard';
 
 export default function Card(props) {
   
@@ -21,31 +22,13 @@ export default function Card(props) {
           <p className="card-player-position">Attrapeur</p>
           <ul>
             <li>
-              <div>
-                <figure className="card-picto">
-                  <img src="quidditch-bars.png" />
-                </figure>
-                <p>22</p>
-                <p>Joués</p>
-              </div>
+              <PictoCard picto='/Quidditch-bars.png' number='22' activity='Joués'/>
             </li>
             <li>
-              <div>
-                <figure className="card-picto">
-                  <img src="Cup.png" />
-                </figure>
-                <p>22</p>
-                <p>Gagnés</p>
-              </div>
+              <PictoCard picto='/Cup.png' number='22' activity='Gagnés'/>
             </li>
             <li>
-              <div>
-                <figure className="card-picto">
-                  <img src="Scar.png" />
-                </figure>
-                <p>22</p>
-                <p>Perdus</p>
-              </div>
+              <PictoCard picto='/Scar.png' number='22' activity='Perdus'/>
             </li>
           </ul>
           <div className="broom">

@@ -34,7 +34,7 @@ export default function Players() {
     <section className="page-players">
       <Navbar />
       <h2>Notre équipe de Quidditch</h2>
-      <h4>Attrapeur</h4>
+      <h3>Attrapeur</h3>
       <article className='card-section-players'>
         <Card info={harryPotter} />
         <Card
