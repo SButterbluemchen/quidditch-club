@@ -1,6 +1,7 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component/dist-modules';
 import 'react-vertical-timeline-component/style.min.css';
+import BludgerIcon from './BludgerIcon';
 
 const Timeline = () => {
   const timelineElements = [
@@ -9,37 +10,33 @@ const Timeline = () => {
       title: 'History 1',
       description: 'lorem ipsum lorem ipsum',
       buttonText: 'blabla',
-      date: 'lorem 34',
-      icon: 'icon',
-
+      date: 'Février 2015',
+      icon: <BludgerIcon />,
     },
     {
       id: 2,
       title: 'History 2',
       description: 'lorem ipsum lorem ipsum',
       buttonText: 'blabla',
-      date: 'lorem 35',
-      icon: 'icon',
-
+      date: 'Octobre 2018',
+      icon: <BludgerIcon />,
     },
     {
       id: 3,
       title: 'History 2',
       description: 'lorem ipsum lorem ipsum',
       buttonText: 'blabla',
-      date: 'lorem 35',
-      icon: 'icon',
-
+      date: 'Mai 2020',
+      icon: <BludgerIcon />,
     },
     {
       id: 4,
-      title: 'History 2',
+      title: 'Avril 2022',
       description: 'lorem ipsum lorem ipsum',
       buttonText: 'blabla',
       date: 'lorem 35',
-      icon: 'icon',
-
-    }
+      icon: <BludgerIcon />,
+    },
   ];
 
   return (
@@ -53,7 +50,12 @@ const Timeline = () => {
                 key={timelineElement.key} //obligatoire lors d'un .map
                 date={timelineElement.date}
                 dateClassName="date"
+                icon={timelineElement.icon}
               >
+                <h3 className='vertical-timeline-element-title'>
+                  {timelineElement.title}
+                </h3>
+
 
               </VerticalTimelineElement>
             );
