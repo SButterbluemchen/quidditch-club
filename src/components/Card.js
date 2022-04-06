@@ -2,8 +2,6 @@ import React from 'react';
 import {useState} from 'react';
 
 export default function Card(props) {
-
-  // const [show, setShow] = useState(() => false);
   
   const [isActive, setIsActive] = useState(false);
 

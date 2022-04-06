@@ -5,6 +5,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import 'primereact/resources/themes/lara-light-indigo/theme.css';
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
 html {
   line-height: 1.15;
   /* 1 */
@@ -360,40 +363,84 @@ body {
   font: normal 100%/1.1 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+h1, h2 {
+  padding: 2.5rem;
+}
+
 h1, h2, h3, h4 {
   font-family: "Poppins", sans-serif;
   color: #D3A500;
   line-height: 1.2;
   text-align: center;
-  padding: 0.5rem 0rem;
 }
 
 h1 {
   font-weight: 500;
-  font-size: 2rem;
+  color: h1;
   text-transform: uppercase;
 }
 
 h2 {
   font-weight: 400;
-  font-size: 1.5rem;
+  color: h2;
   text-transform: uppercase;
 }
 
 h3 {
   font-weight: 400;
-  font-size: 1.4rem;
+  color: h3;
   text-transform: uppercase;
 }
 
 h4 {
   font-weight: 400;
-  font-size: 1.2rem;
+  color: h4;
 }
 
 h5 {
   font-weight: 400;
-  font-size: 1.1rem;
+  color: h5;
+}
+
+.navbar article {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.navbar figure {
+  width: 4rem;
+  margin: 0.5rem;
+}
+.navbar figure img {
+  width: 100%;
+}
+
+.p-menubar {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.07rem solid white;
+  padding: 0;
+  margin: 0 10rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
+  color: white;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:not(.p-disabled):hover {
+  background: transparent;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text {
+  color: #D3A500;
+}
+
+.p-menubar-root-list {
+  gap: 2rem;
 }
 
 .card {
@@ -403,6 +450,7 @@ h5 {
   display: grid;
   overflow: hidden;
   background: #FAF6F0;
+  justify-content: center;
 }
 .card::before {
   content: "";
@@ -424,7 +472,7 @@ h5 {
   overflow: hidden;
 }
 .card .card-player-img img {
-  width: 95%;
+  width: 100%;
   border: 0.1rem solid #D3A500;
 }
 .card .card-player {
@@ -472,6 +520,9 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+.card ul li div p:nth-child(3) {
+  font-size: 0.8rem;
+}
 .card .card-picto {
   width: 1rem;
   max-height: 1rem;
@@ -490,10 +541,15 @@ h5 {
 .card .broom figure {
   width: 5rem;
   max-height: 2rem;
-  margin: 0;
+  margin: 0 0 0.2rem 0;
 }
 .card .broom figure img {
   width: 100%;
+}
+
+.page-players {
+  background-image: url("/public/hogwarts-background.webp");
+  height: 100vh;
 }
 
 .card-section-players {

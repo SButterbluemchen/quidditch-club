@@ -2,9 +2,10 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-@mixin headingstyle($weight, $size, $transform: null) {
+@mixin headingstyle($weight, $size, $color: null, $transform: null) {
   font-weight: map-get($map: $fontweights, $key: $weight);
   font-size: map-get($map: $fontsizes, $key: $size);
+  color: $color;
   text-transform: $transform;
 }
 
@@ -50,4 +51,3 @@
     }
   }
 }
-

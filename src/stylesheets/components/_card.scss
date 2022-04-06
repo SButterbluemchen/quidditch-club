@@ -5,7 +5,7 @@
   display: grid;
   overflow: hidden;
   background: $secondary-color;
-  // justify-content: center;
+  justify-content: center;
   &::before {
     content: "";
     position: absolute;
@@ -26,18 +26,13 @@
     height: 17rem;
     overflow: hidden;
     img {
-      width: 95%;
+      width: 100%;
       border: 0.1rem solid $primary-color;
     }
   }
 
   .card-player {
     text-align: center;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // justify-items: center;
-    // align-items: center;
-    // grid-auto-rows: max-content;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -46,7 +41,7 @@
     height: 4rem;
     transition: 0.5s ease;
     background: $secondary-color;
-    
+
     &.active {
       height: 60%;
       transition: height 0.5s ease-in-out;
@@ -80,20 +75,22 @@
       list-style-type: none;
       div {
         @include flex-wrap(wrap, center, center);
-
+        p:nth-child(3) {
+          font-size: map-get($map: $fontsizes, $key: small);
+        }
       }
     }
   }
 
   .card-picto {
-      width: 1rem;
-      max-height: 1rem;
-      margin: 0;
-      img {
-        width: 100%;
-      }
+    width: 1rem;
+    max-height: 1rem;
+    margin: 0;
+    img {
+      width: 100%;
     }
-  
+  }
+
   .broom {
     @include flex-wrap(nowrap, center, center);
     flex-direction: column;
@@ -101,7 +98,7 @@
     figure {
       width: 5rem;
       max-height: 2rem;
-      margin: 0;
+      margin: 0 0 0.2rem 0;
       img {
         width: 100%;
       }
