@@ -1,0 +1,50 @@
+.navbar {
+  article {
+    @include flex-wrap(nowrap, center, center);
+  }
+  figure {
+    width: 4rem;
+    margin: 0.5rem;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.p-menubar {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.07rem solid white;
+  padding: 0;
+  margin: 0 10rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link
+  .p-menuitem-text {
+  color: white;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link:not(.p-disabled):hover {
+  background: transparent;
+}
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link:not(.p-disabled):hover
+  .p-menuitem-text {
+  color: $primary-color;
+}
+
+.p-menubar-root-list {
+  gap: 2rem;
+}

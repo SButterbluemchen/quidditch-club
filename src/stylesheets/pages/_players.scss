@@ -1,0 +1,9 @@
+.page-players {
+  background-image: url('/public/hogwarts-background.webp');
+  height: 100vh;
+}
+
+.card-section-players {
+  @include flex-wrap(wrap, center);
+  gap: 2rem;
+}

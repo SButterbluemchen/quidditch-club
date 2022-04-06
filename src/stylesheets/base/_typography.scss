@@ -2,34 +2,37 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
-  font: normal 100% / 1 $text-font-stack;
+  color: black;
+  font: normal 100% / 1.1 $text-font-stack;
+}
+
+h1, h2 {
+  padding: 2.5rem;
 }
 
 h1, h2, h3, h4 {
   font-family: $heading-font-stack;
-  color: $text-color;
+  color: $primary-color;
   line-height: 1.2;
   text-align: center;
-  margin: 0.5rem 0rem;
 }
 
 h1 {
-  @include headingstyle(bold, h1, uppercase);
+  @include headingstyle(bold, white, h1, uppercase);
 }
 
 h2 {
-  @include headingstyle(normal, h2, uppercase);
+  @include headingstyle(normal, $primary-color, h2, uppercase);
 }
 
 h3 {
-  @include headingstyle(normal, h3, uppercase);
+  @include headingstyle(normal, white, h3, uppercase);
 }
 
 h4 {
-  @include headingstyle(normal, h4)
+  @include headingstyle(normal, $primary-color, h4)
 }
 
 h5 {
-  @include headingstyle(normal, h5)
+  @include headingstyle(normal, $primary-color, h5)
 }

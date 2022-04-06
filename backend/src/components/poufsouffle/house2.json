@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_poufsouffle_house2s",
+  "info": {
+    "displayName": "House2",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "TestHouse": {
+      "type": "string"
+    }
+  }
+}
