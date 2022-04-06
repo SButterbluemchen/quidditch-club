@@ -372,34 +372,34 @@ h1, h2, h3, h4 {
   color: #D3A500;
   line-height: 1.2;
   text-align: center;
+  text-shadow: 0.07rem 0rem 0.3rem rgb(75, 75, 75);
 }
 
 h1 {
   font-weight: 500;
-  color: h1;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
 h2 {
   font-weight: 400;
-  color: h2;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 
 h3 {
   font-weight: 400;
-  color: h3;
-  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 
 h4 {
   font-weight: 400;
-  color: h4;
+  font-size: 1.2rem;
 }
 
 h5 {
   font-weight: 400;
-  color: h5;
+  font-size: 1.1rem;
 }
 
 .navbar article {
@@ -451,6 +451,12 @@ h5 {
   overflow: hidden;
   background: #FAF6F0;
   justify-content: center;
+  transition: 0.2s ease;
+}
+@media only screen and (min-width: 900px) {
+  .card:hover {
+    transform: translateY(-0.2rem);
+  }
 }
 .card::before {
   content: "";
@@ -497,7 +503,7 @@ h5 {
   padding-top: 0.7rem;
 }
 .card .card-player-number {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   position: absolute;
   left: 15%;
   padding-top: 1.8%;

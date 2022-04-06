@@ -2,14 +2,13 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-@mixin headingstyle($weight, $size, $color: null, $transform: null) {
+@mixin headingstyle($weight, $size, $transform: null) {
   font-weight: map-get($map: $fontweights, $key: $weight);
   font-size: map-get($map: $fontsizes, $key: $size);
-  color: $color;
   text-transform: $transform;
 }
 
-@mixin flex-wrap($wrap, $justify-content, $align-items) {
+@mixin flex-wrap($wrap, $justify-content, $align-items: null) {
   display: flex;
   flex-wrap: $wrap;
   justify-content: $justify-content;

@@ -15,24 +15,25 @@ h1, h2, h3, h4 {
   color: $primary-color;
   line-height: 1.2;
   text-align: center;
+  text-shadow: 0.07rem 0rem 0.3rem rgb(75, 75, 75);
 }
 
 h1 {
-  @include headingstyle(bold, white, h1, uppercase);
+  @include headingstyle(bold, h1, uppercase);
 }
 
 h2 {
-  @include headingstyle(normal, $primary-color, h2, uppercase);
+  @include headingstyle(normal, h2, uppercase);
 }
 
 h3 {
-  @include headingstyle(normal, white, h3, uppercase);
+  @include headingstyle(normal, h3);
 }
 
 h4 {
-  @include headingstyle(normal, $primary-color, h4)
+  @include headingstyle(normal, h4);
 }
 
 h5 {
-  @include headingstyle(normal, $primary-color, h5)
+  @include headingstyle(normal, h5);
 }
