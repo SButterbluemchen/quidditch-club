@@ -17,14 +17,14 @@ $fontsizes: (
     "small": 0.8rem,
   );
 $fontweights: (
-    "extra-bold": 600,
-    "bold": 500,
-    "normal": 400,
-    "semi-light": 300,
-    "light": 200,
+    "extra-bold": 500,
+    "bold": 400,
+    "normal": 300,
+    "semi-light": 200,
+    "light": 100,
   );
 
 // colors
 $primary-color: #D3A500;
 $secondary-color: #FAF6F0;
-$tertiary-color: #0A0A1E;
+$tertiary-color: rgb(22, 1, 59);
