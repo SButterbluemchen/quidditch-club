@@ -4,49 +4,43 @@ import 'react-vertical-timeline-component/style.min.css';
 import BludgerIcon from './BludgerIcon';
 
 
-// Données en 'dur' pour tester la timeline animée
+//Données 'en dur"
 const Timeline = () => {
   const timelineElements = [
     {
       id: 1,
-      title: 'History 1',
-      description: 'lorem ipsum lorem ipsum',
-      date: 'Février 2015',
+      title: '"Tout est possible du moment que l\'on a assez de cran"',
+      description:
+        'Quidditch Club est l\'une des premières équipes françaises de Quidditch moldu, créée le 18 juin 2007 par trois amis à Lille. L\'idée a pris naissance autour d\'un verre, d\'abord sous forme de blague, puis ce pari fou est apparu comme une évidence.',
+      date: 'Juin 2007',
       icon: <BludgerIcon />,
     },
     {
       id: 2,
-      title: 'History 2',
-      description: 'lorem ipsum lorem ipsum',
-      date: 'Octobre 2018',
+      title: '"C’est de la force des convictions que dépend la réussite, pas du nombre des partisans."',
+      description: 'La machine Quidditch Club est lancée. En premier lieu, c\'est le bouche à oreilles qui fait connaitre l\'association sportive. Nous démarrons à 15 adhérent.e.s régulier.e.s.',
+      date: 'Octobre 2007',
       icon: <BludgerIcon />,
     },
     {
       id: 3,
-      title: 'History 3',
-      description: 'lorem ipsum lorem ipsum',
-      date: 'Mai 2020',
+      title: '"Tout homme s\'enchirit quand abonde l\'esprit"',
+      description: 'Explosion des réseaux sociaux en France et création de la toute première page Quidditch Club, bien différente de celle que nous connaissons aujourd\'hui. Les sponsors commencent à s\'intéresser à nous, le club compte désormais 300 membres actifs.',
+      date: 'Décembre 2009',
       icon: <BludgerIcon />,
     },
     {
       id: 4,
-      title: 'History 4',
-      description: 'lorem ipsum lorem ipsum',
-      date: 'lorem 35',
+      title: '"Il n\'y a pas de bien ou de mal, il n\'y a que le pouvoir, et ceux qui sont trop faibles pour le rechercher..."',
+      description: 'Premier gros partenariat avec Decathlon, nos équipements évoluent. Nous rencontrons d\'autres fédérations françaises et organisons des échanges.',
+      date: 'Mai 2015',
       icon: <BludgerIcon />,
     },
     {
       id: 5,
       title: 'History 4',
-      description: 'lorem ipsum lorem ipsum',
-      date: 'lorem 35',
-      icon: <BludgerIcon />,
-    },
-    {
-      id: 6,
-      title: 'History 4',
-      description: 'lorem ipsum lorem ipsum',
-      date: 'lorem 35',
+      description: 'Aujourd\'hui',
+      date: '2022',
       icon: <BludgerIcon />,
     },
   ];
@@ -61,7 +55,7 @@ const Timeline = () => {
               <VerticalTimelineElement
                 key={timelineElement.key} //obligatoire lors d'un .map
                 date={timelineElement.date}
-                dateClassName='date'
+                dateClassName='timeline-date-color'
                 icon={timelineElement.icon}
               >
                 <h3 className='timeline-title'>
@@ -70,9 +64,6 @@ const Timeline = () => {
                 <p id='timeline-description'>
                   {timelineElement.description}
                 </p>
-
-
-
               </VerticalTimelineElement>
             );
           })
