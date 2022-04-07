@@ -2,6 +2,8 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component/dist-modules';
 import 'react-vertical-timeline-component/style.min.css';
 import BludgerIcon from './BludgerIcon';
+//import TimelineImage from './TimelineImage';
+
 
 
 //Données 'en dur"
@@ -14,6 +16,7 @@ const Timeline = () => {
         'Quidditch Club est l\'une des premières équipes françaises de Quidditch moldu, créée le 18 juin 2007 par trois amis à Lille. L\'idée a pris naissance autour d\'un verre, d\'abord sous forme de blague, puis ce pari fou est apparu comme une évidence.',
       date: 'Juin 2007',
       icon: <BludgerIcon />,
+      //image: <TimelineImage />
     },
     {
       id: 2,
@@ -38,8 +41,9 @@ const Timeline = () => {
     },
     {
       id: 5,
+
       title: '"La célébrité ne peut donner que ce qu\'elle a, Harry. N\'oublie jamais ça !"',
-      description: 'Aujourd\'hui nous sommes fiers vous annoncer que l\'une de nos équipes est sélectionnée aux J.O 2024 ! Nous ne serions que trop remercier les personnes qui nous ont soutenu dès le départ. Notre club continuera à exister à petite échelle et les personnes passionnées à promouvoir nos valeurs : dépassement de soi et partage.',
+      description: 'Aujourd\'hui nous sommes fiers vous annoncer que l\'une de nos équipes est sélectionnée aux J.O 2024 ! Nous ne saurions que trop remercier les personnes qui nous ont soutenu dès le départ. Notre club continuera à exister à petite échelle et les personnes passionnées à promouvoir nos valeurs : dépassement de soi et partage.',
       date: '2022',
       icon: <BludgerIcon />,
     },
@@ -49,7 +53,7 @@ const Timeline = () => {
     <section className='timeline-section'>
       <h2>Timeline</h2>
       <VerticalTimeline>
-        { //itération sur l'objet timelineElements
+        { //itération sur le tableau d'objets timelineElements
           timelineElements.map((timelineElement) => {
             return (
               <VerticalTimelineElement
@@ -57,6 +61,7 @@ const Timeline = () => {
                 date={timelineElement.date}
                 dateClassName='timeline-date-color'
                 icon={timelineElement.icon}
+                //image={timelineElement.image}
               >
                 <h3 className='timeline-title'>
                   {timelineElement.title}

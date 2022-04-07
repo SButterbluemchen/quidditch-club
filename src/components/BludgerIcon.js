@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BludgerIcon = () => {
-  const img = <img src="./bludger.png"></img>;
+  const img = <img src="./bludger.png" alt='bludger'></img>;
   return (
     <div className='bludgericon-icon'>
       {img}
