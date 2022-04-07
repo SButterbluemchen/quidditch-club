@@ -80,7 +80,7 @@ const CardSection = (props) => {
     <section className="card-section">
       <h3>{props.position}</h3>
       <article className='card-section-players'>
-        {isLoading ? 'Loading...' : players.map(player => {
+        {isLoading? 'Loading...' : players.map(player => {
           if (player.attributes.position === props.position) {
             return <Card key={player.id} infos={player.attributes} />;
           }
