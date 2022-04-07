@@ -9,7 +9,7 @@ const Timeline = () => {
   const timelineElements = [
     {
       id: 1,
-      title: '"Tout est possible du moment que l\'on a assez de cran"',
+      title: '"Tout est possible du moment que l\'on a assez de cran."',
       description:
         'Quidditch Club est l\'une des premières équipes françaises de Quidditch moldu, créée le 18 juin 2007 par trois amis à Lille. L\'idée a pris naissance autour d\'un verre, d\'abord sous forme de blague, puis ce pari fou est apparu comme une évidence.',
       date: 'Juin 2007',
@@ -24,7 +24,7 @@ const Timeline = () => {
     },
     {
       id: 3,
-      title: '"Tout homme s\'enchirit quand abonde l\'esprit"',
+      title: '"Tout homme s\'enrichit quand abonde l\'esprit."',
       description: 'Explosion des réseaux sociaux en France et création de la toute première page Quidditch Club, bien différente de celle que nous connaissons aujourd\'hui. Les sponsors commencent à s\'intéresser à nous, le club compte désormais 300 membres actifs.',
       date: 'Décembre 2009',
       icon: <BludgerIcon />,
@@ -38,8 +38,8 @@ const Timeline = () => {
     },
     {
       id: 5,
-      title: 'History 4',
-      description: 'Aujourd\'hui',
+      title: '"La célébrité ne peut donner que ce qu\'elle a, Harry. N\'oublie jamais ça !"',
+      description: 'Aujourd\'hui nous sommes fiers vous annoncer que l\'une de nos équipes est sélectionnée aux J.O 2024 ! Nous ne serions que trop remercier les personnes qui nous ont soutenu dès le départ. Notre club continuera à exister à petite échelle et les personnes passionnées à promouvoir nos valeurs : dépassement de soi et partage.',
       date: '2022',
       icon: <BludgerIcon />,
     },
