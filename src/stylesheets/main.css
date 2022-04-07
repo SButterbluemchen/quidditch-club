@@ -608,6 +608,22 @@ h5 {
   padding: 0.5rem;
 }
 
+.timeline-section {
+  /* background-image: url('/public/hogwarts-background.webp');
+  background-size: 100%; */
+  background-color: red;
+}
+
+.timeline-date-color {
+  color: white;
+}
+
+.vertical-timeline-element-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .page-players {
   background-image: url("/public/hogwarts-background.webp");
   background-size: 100vw 100vh;
