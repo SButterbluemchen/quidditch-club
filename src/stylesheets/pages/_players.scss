@@ -1,7 +1,13 @@
 .page-players {
   background-image: url('/public/hogwarts-background.webp');
-  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  .page-players-div{
+    background: $tertiary-color;
+  }
 }
+
+
 
 .card-section-players {
   @include flex-wrap(wrap, center);

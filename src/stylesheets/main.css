@@ -455,7 +455,7 @@ h5 {
 }
 @media only screen and (min-width: 900px) {
   .card:hover {
-    transform: translateY(-0.2rem);
+    transform: translateY(-0.4rem);
   }
 }
 .card::before {
@@ -505,7 +505,7 @@ h5 {
 .card .card-player-number {
   font-size: 1.8rem;
   position: absolute;
-  left: 15%;
+  left: 10%;
   padding-top: 1.8%;
 }
 .card .card-player-name {
@@ -543,6 +543,7 @@ h5 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: rgba(250, 246, 240, 0.7);
 }
 .card .broom figure {
   width: 5rem;
@@ -553,9 +554,20 @@ h5 {
   width: 100%;
 }
 
+.card-section {
+  padding: 0rem 0rem 5rem 0rem;
+}
+.card-section h3 {
+  padding: 0.5rem;
+}
+
 .page-players {
   background-image: url("/public/hogwarts-background.webp");
-  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.page-players .page-players-div {
+  background: rgb(22, 1, 59);
 }
 
 .card-section-players {
