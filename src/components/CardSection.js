@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Card from './Card';
-import {useEffect, useState} from 'react';
 
 const CardSection = (props) => {
 
@@ -77,7 +76,7 @@ const CardSection = (props) => {
       
 
   return (
-    <section className="card-section">
+    <section className="card-section container">
       <h3>{props.position}</h3>
       <article className='card-section-players'>
         {isLoading? 'Loading...' : players.map(player => {

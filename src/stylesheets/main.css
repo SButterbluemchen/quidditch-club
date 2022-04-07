@@ -350,9 +350,18 @@ html {
   padding: 0;
 }
 
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
 p {
   display: block;
   margin: 0.2rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /**
@@ -376,41 +385,55 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
 
 h3 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.4rem;
 }
 
 h4 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.2rem;
 }
 
 h5 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.1rem;
 }
 
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 900px) {
+  .navbar {
+    display: unset;
+  }
+}
 .navbar article {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
+.navbar article h3 {
+  color: white;
+}
 .navbar figure {
   width: 4rem;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 .navbar figure img {
   width: 100%;
@@ -420,11 +443,36 @@ h5 {
   background: transparent;
   border: none;
   border-radius: 0;
-  border-bottom: 0.07rem solid white;
   padding: 0;
-  margin: 0 10rem;
-  justify-content: center;
+  justify-content: flex-end;
   text-transform: uppercase;
+  width: 100%;
+}
+@media only screen and (min-width: 900px) {
+  .p-menubar {
+    width: 70%;
+    border-bottom: 0.07rem solid white;
+    margin: auto;
+    justify-content: center;
+  }
+}
+.p-menubar .p-menubar-root-list {
+  gap: 2rem;
+  background: rgb(22, 1, 59);
+}
+@media only screen and (min-width: 900px) {
+  .p-menubar .p-menubar-root-list {
+    background-color: unset;
+  }
+}
+.p-menubar li {
+  padding: 0rem 2rem;
+}
+.p-menubar .p-menubar-button:hover {
+  background: transparent;
+}
+.p-menubar .p-menubar-button:focus {
+  box-shadow: none;
 }
 
 .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
@@ -439,8 +487,10 @@ h5 {
   color: #D3A500;
 }
 
-.p-menubar-root-list {
-  gap: 2rem;
+.pi {
+  color: #D3A500;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 .card {
@@ -509,7 +559,7 @@ h5 {
   padding-top: 1.8%;
 }
 .card .card-player-name {
-  font-weight: 500;
+  font-weight: 400;
 }
 .card ul {
   display: grid;
