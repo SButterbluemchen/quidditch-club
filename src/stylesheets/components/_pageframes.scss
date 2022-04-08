@@ -1,0 +1,19 @@
+.page-frames {
+  @include flex-wrap(nowrap, space-between);
+  width: 98%;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%, 0);;
+  img {
+    width: 10rem;
+  }
+}
+
+.frame-top {
+  top: 0.5%;
+}
+
+.frame-bottom {
+  bottom: 0.5%;
+}

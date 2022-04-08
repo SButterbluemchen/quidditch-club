@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar';
 import CardSection from './components/CardSection';
 import React, {useEffect, useState} from 'react';
+import PageTopFrames from './components/pageTopFrames';
+import PageBottomFrames from './components/PageBottomFrames';
 
 export default function Players() {
 
@@ -85,8 +87,10 @@ export default function Players() {
   return (
     <section className="page-players">
       <Navbar />
+      {window.innerWidth >= 600 && <PageTopFrames />}
       <h2>Notre équipe de Quidditch</h2>
       {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)};
+      {window.innerWidth >= 600 && <PageBottomFrames />}
     </section>
   );
 }
