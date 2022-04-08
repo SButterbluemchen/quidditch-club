@@ -7,7 +7,7 @@
   background: $secondary-color;
   justify-content: center;
   transition: 0.2s ease;
-  @include media(desktop){
+  @include media(desktop) {
     &:hover {
       transform: translateY(-0.4rem);
     }
@@ -84,6 +84,19 @@
           font-size: map-get($map: $fontsizes, $key: small);
         }
       }
+      &:nth-of-type(4) {
+        grid-column: 1 / -1;
+        div {
+          flex-direction: column;
+          figure {
+            width: 5rem;
+            max-height: 2rem;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -95,24 +108,11 @@
       width: 100%;
     }
   }
-
-  .broom {
-    @include flex-wrap(nowrap, center, center);
-    flex-direction: column;
-    background: rgba($color: $secondary-color, $alpha: 0.7);
-    figure {
-      width: 5rem;
-      max-height: 2rem;
-      margin: 0 0 0.2rem 0;
-      img {
-        width: 100%;
-      }
-    }
-  }
 }
 
 .card-section {
+  padding-bottom: 4rem;
   h3 {
-  padding: 0.5rem;
+    padding: 0.5rem;
   }
 }
