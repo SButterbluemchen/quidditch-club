@@ -87,8 +87,6 @@ export default function Players() {
       <Navbar />
       <h2>Notre équipe de Quidditch</h2>
       {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)};
-      {/* <div className="page-players-div">
-      </div> */}
     </section>
   );
 }
