@@ -23,21 +23,18 @@ export default function Card(props) {
           <p className="card-player-position">{props.infos.position}</p>
           <ul>
             <li>
-              <PictoCard picto='/Quidditch-bars.png' number='22' activity='Joués'/>
+              <PictoCard picto='/Quidditch-bars.png' number='22' text='Joués'/>
             </li>
             <li>
-              <PictoCard picto='/Cup.png' number='22' activity='Gagnés'/>
+              <PictoCard picto='/Cup.png' number='22' text='Gagnés'/>
             </li>
             <li>
-              <PictoCard picto='/Scar.png' number='22' activity='Perdus'/>
+              <PictoCard picto='/Scar.png' number='22' text='Perdus'/>
+            </li>
+            <li>
+              <PictoCard picto='/broom.png' text={props.infos.broom}/>
             </li>
           </ul>
-          <div className="broom">
-            <figure>
-              <img src="broom.png" />
-            </figure>
-            <p>Firebolt 500</p>
-          </div>
         </div>
       </div>
     </article>

@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component/dist-modules";
-import "react-vertical-timeline-component/style.min.css";
-import BludgerIcon from "./BludgerIcon";
+} from 'react-vertical-timeline-component/dist-modules';
+import 'react-vertical-timeline-component/style.min.css';
+import BludgerIcon from './BludgerIcon';
 //import TimelineImage from './TimelineImage';
 
 //Données 'en dur"
@@ -30,7 +30,7 @@ const Timeline = () => {
     },
     {
       id: 3,
-      title: "\"Tout homme s'enrichit quand abonde l'esprit.\"",
+      title: '"Tout homme s\'enrichit quand abonde l\'esprit."',
       description:
         'Explosion des réseaux sociaux en France et création de la toute première page Quidditch Club, bien différente de celle que nous connaissons aujourd\'hui. Les sponsors commencent à s\'intéresser à nous, le club compte désormais 300 membres actifs.',
       date: 'Décembre 2009',
@@ -39,7 +39,7 @@ const Timeline = () => {
     {
       id: 4,
       title:
-        "\"Il n'y a pas de bien ou de mal, il n'y a que le pouvoir, et ceux qui sont trop faibles pour le rechercher...\"",
+        '"Il n\'y a pas de bien ou de mal, il n\'y a que le pouvoir, et ceux qui sont trop faibles pour le rechercher..."',
       description:
         'Premier gros partenariat avec Decathlon, nos équipements évoluent. Nous rencontrons d\'autres fédérations françaises et organisons des échanges.',
       date: 'Mai 2015',
@@ -49,10 +49,10 @@ const Timeline = () => {
       id: 5,
 
       title:
-        "\"La célébrité ne peut donner que ce qu'elle a, Harry. N'oublie jamais ça !\"",
+        '"La célébrité ne peut donner que ce qu\'elle a, Harry. N\'oublie jamais ça !"',
       description:
         'Aujourd\'hui nous sommes fiers vous annoncer que l\'une de nos équipes est sélectionnée aux J.O 2024 ! Nous ne saurions que trop remercier les personnes qui nous ont soutenu dès le départ. Notre club continuera à exister à petite échelle et les personnes passionnées à promouvoir nos valeurs : dépassement de soi et partage.',
-      date: "2022",
+      date: '2022',
       icon: <BludgerIcon />,
     },
   ];

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const BludgerIcon = () => {
   const img = <img src="./bludger.png" alt="bludger"></img>;

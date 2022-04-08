@@ -8,7 +8,7 @@ export default function PictoCard(props) {
         <img src={props.picto} />
       </figure>
       <p>{props.number}</p>
-      <p>{props.activity}</p>
+      <p>{props.text}</p>
     </div>
   );
 }
