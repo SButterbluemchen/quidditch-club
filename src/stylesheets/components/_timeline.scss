@@ -1,0 +1,16 @@
+.timeline-section {
+/* background-image: url('/public/hogwarts-background.webp');
+background-size: 100%; */
+background-color: red;
+}
+
+.timeline-date-color {
+  color: white;
+}
+
+// class span générée dans le DOM
+.vertical-timeline-element-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
