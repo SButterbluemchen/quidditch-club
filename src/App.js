@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './stylesheets/main.css';
+import './stylesheets/main.css'; 
 import Home from './Home';
 import Players from './Players';
+import History from './History';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/players" element={<Players />} />
+        <Route path="/history" element={<History />} />
       </Routes>
     </BrowserRouter>
   );
