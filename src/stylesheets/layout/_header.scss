@@ -1,5 +1,6 @@
 .navbar {
   @include flex-wrap(nowrap, space-between, center);
+  z-index: 9999;
   @include media(desktop) {
     display: unset;
   }
@@ -19,6 +20,7 @@
 }
 
 .p-menubar {
+  z-index: 9999;
   background: transparent;
   border: none;
   border-radius: 0;
