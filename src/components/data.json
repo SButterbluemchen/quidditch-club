@@ -1,0 +1,396 @@
+{
+  "data": [
+      {
+          "id": 1,
+          "attributes": {
+              "number": 1,
+              "firstName": "Harry",
+              "lastName": "Potter",
+              "position": "Attrapeur",
+              "broom": "Firebolt 5000",
+              "home": "Gryffondor",
+              "createdAt": "2022-04-05T10:26:52.198Z",
+              "updatedAt": "2022-04-06T14:42:58.545Z",
+              "publishedAt": "2022-04-06T10:02:15.936Z",
+              "image": {
+                  "data": {
+                      "id": 1,
+                      "attributes": {
+                          "name": "harryPotter.jpeg",
+                          "alternativeText": "harryPotter.jpeg",
+                          "caption": "harryPotter.jpeg",
+                          "width": 163,
+                          "height": 227,
+                          "formats": {
+                              "thumbnail": {
+                                  "name": "thumbnail_harryPotter.jpeg",
+                                  "hash": "thumbnail_harry_Potter_eca7d93075",
+                                  "ext": ".jpeg",
+                                  "mime": "image/jpeg",
+                                  "path": null,
+                                  "width": 112,
+                                  "height": 156,
+                                  "size": 4.33,
+                                  "url": "/uploads/thumbnail_harry_Potter_eca7d93075.jpeg"
+                              }
+                          },
+                          "hash": "harry_Potter_eca7d93075",
+                          "ext": ".jpeg",
+                          "mime": "image/jpeg",
+                          "size": 7.96,
+                          "url": "/uploads/harry_Potter_eca7d93075.jpeg",
+                          "previewUrl": null,
+                          "provider": "local",
+                          "provider_metadata": null,
+                          "createdAt": "2022-04-06T14:42:46.871Z",
+                          "updatedAt": "2022-04-06T14:42:46.871Z"
+                      }
+                  }
+              }
+          }
+      },
+      {
+          "id": 3,
+          "attributes": {
+              "number": 2,
+              "firstName": "Fred",
+              "lastName": "Weasley",
+              "position": "Batteur",
+              "broom": "Nimbus 2000",
+              "home": "Gryffondor",
+              "createdAt": "2022-04-06T10:00:57.070Z",
+              "updatedAt": "2022-04-06T10:02:09.105Z",
+              "publishedAt": "2022-04-06T10:02:09.104Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 4,
+          "attributes": {
+              "number": 3,
+              "firstName": "George",
+              "lastName": "Weasley",
+              "position": "Batteur",
+              "broom": "Nimbus 2000",
+              "home": "Gryffondor",
+              "createdAt": "2022-04-06T10:01:47.814Z",
+              "updatedAt": "2022-04-06T10:02:13.383Z",
+              "publishedAt": "2022-04-06T10:02:13.382Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 5,
+          "attributes": {
+              "number": 4,
+              "firstName": "Angelina",
+              "lastName": "Johnson",
+              "position": "Poursuiveur",
+              "broom": "Nimbus 2000",
+              "home": "Gryffondor",
+              "createdAt": "2022-04-06T10:02:48.090Z",
+              "updatedAt": "2022-04-06T10:02:49.051Z",
+              "publishedAt": "2022-04-06T10:02:49.050Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 6,
+          "attributes": {
+              "number": 5,
+              "firstName": "Marcus",
+              "lastName": "Flint",
+              "position": "Poursuiveur",
+              "broom": "Firebolt 5000",
+              "home": "Serpentard",
+              "createdAt": "2022-04-06T10:03:18.525Z",
+              "updatedAt": "2022-04-06T10:03:19.396Z",
+              "publishedAt": "2022-04-06T10:03:19.394Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 7,
+          "attributes": {
+              "number": 6,
+              "firstName": "Adrian",
+              "lastName": "Pucey",
+              "position": "Poursuiveur",
+              "broom": "Nimbus 2000",
+              "home": "Serpentard",
+              "createdAt": "2022-04-06T10:03:49.074Z",
+              "updatedAt": "2022-04-06T10:03:50.015Z",
+              "publishedAt": "2022-04-06T10:03:50.013Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 8,
+          "attributes": {
+              "number": 7,
+              "firstName": "Graham",
+              "lastName": "Montague",
+              "position": "Poursuiveur",
+              "broom": "Firebolt 5000",
+              "home": "Serpentard",
+              "createdAt": "2022-04-06T10:04:47.527Z",
+              "updatedAt": "2022-04-06T10:04:48.361Z",
+              "publishedAt": "2022-04-06T10:04:48.359Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 9,
+          "attributes": {
+              "number": 8,
+              "firstName": "Cassius",
+              "lastName": "Warrington",
+              "position": "Poursuiveur",
+              "broom": "Firebolt 5000",
+              "home": "Serpentard",
+              "createdAt": "2022-04-06T10:05:21.330Z",
+              "updatedAt": "2022-04-06T10:05:22.320Z",
+              "publishedAt": "2022-04-06T10:05:22.319Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 10,
+          "attributes": {
+              "number": 9,
+              "firstName": "Dean",
+              "lastName": "Thomas",
+              "position": "Poursuiveur",
+              "broom": "Nimbus 2000",
+              "home": "Gryffondor",
+              "createdAt": "2022-04-06T10:05:38.278Z",
+              "updatedAt": "2022-04-06T10:07:55.285Z",
+              "publishedAt": "2022-04-06T10:05:39.072Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 11,
+          "attributes": {
+              "number": 10,
+              "firstName": "Cedric",
+              "lastName": "Diggory",
+              "position": "Attrapeur",
+              "broom": "Firebolt 5000",
+              "home": "Poufsouffle",
+              "createdAt": "2022-04-06T10:08:17.419Z",
+              "updatedAt": "2022-04-07T12:28:56.655Z",
+              "publishedAt": "2022-04-06T10:08:18.247Z",
+              "image": {
+                  "data": {
+                      "id": 3,
+                      "attributes": {
+                          "name": "cedricDiggory.png",
+                          "alternativeText": "cedricDiggory.png",
+                          "caption": "cedricDiggory.png",
+                          "width": 700,
+                          "height": 1198,
+                          "formats": {
+                              "thumbnail": {
+                                  "name": "thumbnail_cedricDiggory.png",
+                                  "hash": "thumbnail_cedric_Diggory_97e12acb72",
+                                  "ext": ".png",
+                                  "mime": "image/png",
+                                  "path": null,
+                                  "width": 91,
+                                  "height": 156,
+                                  "size": 31.21,
+                                  "url": "/uploads/thumbnail_cedric_Diggory_97e12acb72.png"
+                              },
+                              "large": {
+                                  "name": "large_cedricDiggory.png",
+                                  "hash": "large_cedric_Diggory_97e12acb72",
+                                  "ext": ".png",
+                                  "mime": "image/png",
+                                  "path": null,
+                                  "width": 584,
+                                  "height": 1000,
+                                  "size": 934.17,
+                                  "url": "/uploads/large_cedric_Diggory_97e12acb72.png"
+                              },
+                              "medium": {
+                                  "name": "medium_cedricDiggory.png",
+                                  "hash": "medium_cedric_Diggory_97e12acb72",
+                                  "ext": ".png",
+                                  "mime": "image/png",
+                                  "path": null,
+                                  "width": 438,
+                                  "height": 750,
+                                  "size": 556.63,
+                                  "url": "/uploads/medium_cedric_Diggory_97e12acb72.png"
+                              },
+                              "small": {
+                                  "name": "small_cedricDiggory.png",
+                                  "hash": "small_cedric_Diggory_97e12acb72",
+                                  "ext": ".png",
+                                  "mime": "image/png",
+                                  "path": null,
+                                  "width": 292,
+                                  "height": 500,
+                                  "size": 263.91,
+                                  "url": "/uploads/small_cedric_Diggory_97e12acb72.png"
+                              }
+                          },
+                          "hash": "cedric_Diggory_97e12acb72",
+                          "ext": ".png",
+                          "mime": "image/png",
+                          "size": 355.45,
+                          "url": "/uploads/cedric_Diggory_97e12acb72.png",
+                          "previewUrl": null,
+                          "provider": "local",
+                          "provider_metadata": null,
+                          "createdAt": "2022-04-07T12:28:53.039Z",
+                          "updatedAt": "2022-04-07T12:28:53.039Z"
+                      }
+                  }
+              }
+          }
+      },
+      {
+          "id": 12,
+          "attributes": {
+              "number": 11,
+              "firstName": "Lucian",
+              "lastName": "Bole",
+              "position": "Batteur",
+              "broom": "Nimbus 2000",
+              "home": "Serpentard",
+              "createdAt": "2022-04-06T10:09:20.473Z",
+              "updatedAt": "2022-04-06T10:09:21.320Z",
+              "publishedAt": "2022-04-06T10:09:21.319Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 13,
+          "attributes": {
+              "number": 12,
+              "firstName": "Peregrine",
+              "lastName": "Derrick",
+              "position": "Batteur",
+              "broom": "Nimbus 2000",
+              "home": "Serpentard",
+              "createdAt": "2022-04-06T10:09:41.409Z",
+              "updatedAt": "2022-04-06T10:09:42.398Z",
+              "publishedAt": "2022-04-06T10:09:42.394Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 14,
+          "attributes": {
+              "number": 13,
+              "firstName": "Ron",
+              "lastName": "Weasley",
+              "position": "Gardien",
+              "broom": "Nimbus 2000",
+              "home": "Gryffondor",
+              "createdAt": "2022-04-06T10:10:21.567Z",
+              "updatedAt": "2022-04-06T14:43:13.377Z",
+              "publishedAt": "2022-04-06T10:10:22.449Z",
+              "image": {
+                  "data": {
+                      "id": 2,
+                      "attributes": {
+                          "name": "ronWeasley.jpeg",
+                          "alternativeText": "ronWeasley.jpeg",
+                          "caption": "ronWeasley.jpeg",
+                          "width": 300,
+                          "height": 400,
+                          "formats": {
+                              "thumbnail": {
+                                  "name": "thumbnail_ronWeasley.jpeg",
+                                  "hash": "thumbnail_ron_Weasley_a514616298",
+                                  "ext": ".jpeg",
+                                  "mime": "image/jpeg",
+                                  "path": null,
+                                  "width": 117,
+                                  "height": 156,
+                                  "size": 3.77,
+                                  "url": "/uploads/thumbnail_ron_Weasley_a514616298.jpeg"
+                              }
+                          },
+                          "hash": "ron_Weasley_a514616298",
+                          "ext": ".jpeg",
+                          "mime": "image/jpeg",
+                          "size": 15.74,
+                          "url": "/uploads/ron_Weasley_a514616298.jpeg",
+                          "previewUrl": null,
+                          "provider": "local",
+                          "provider_metadata": null,
+                          "createdAt": "2022-04-06T14:42:55.510Z",
+                          "updatedAt": "2022-04-06T14:42:55.510Z"
+                      }
+                  }
+              }
+          }
+      },
+      {
+          "id": 15,
+          "attributes": {
+              "number": 14,
+              "firstName": "Miles",
+              "lastName": "Bletchley",
+              "position": "Gardien",
+              "broom": "Firebolt 5000",
+              "home": "Serpentard",
+              "createdAt": "2022-04-06T10:10:49.408Z",
+              "updatedAt": "2022-04-06T10:10:50.266Z",
+              "publishedAt": "2022-04-06T10:10:50.265Z",
+              "image": {
+                  "data": null
+              }
+          }
+      },
+      {
+          "id": 16,
+          "attributes": {
+              "number": 15,
+              "firstName": "Olivier",
+              "lastName": "Dubois",
+              "position": "Entraîneur",
+              "broom": "Nimbus 2000",
+              "home": "Gryffondor",
+              "createdAt": "2022-04-06T10:12:07.367Z",
+              "updatedAt": "2022-04-06T10:12:40.523Z",
+              "publishedAt": "2022-04-06T10:12:08.312Z",
+              "image": {
+                  "data": null
+              }
+          }
+      }
+  ],
+  "meta": {
+      "pagination": {
+          "page": 1,
+          "pageSize": 25,
+          "pageCount": 1,
+          "total": 15
+      }
+  }
+}

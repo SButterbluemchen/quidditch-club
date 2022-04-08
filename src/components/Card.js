@@ -10,7 +10,7 @@ export default function Card(props) {
   function handlePlayerClick() {
     setIsActive(!isActive);
   }
-
+ 
   return (
     <article className="card" onClick={handlePlayerClick}>
       <figure className="card-player-img">

@@ -348,6 +348,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: rgb(22, 1, 59);
 }
 
 .container {
@@ -608,13 +609,26 @@ h5 {
   padding: 0.5rem;
 }
 
+.timeline-section {
+  /* background-image: url('/public/hogwarts-background.webp');
+  background-size: 100%; */
+  background-color: red;
+}
+
+.timeline-date-color {
+  color: white;
+}
+
+.vertical-timeline-element-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .page-players {
-  background-image: url("/public/hogwarts-background.webp");
+  background-image: url("/public/hogwarts-background.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
-}
-.page-players .page-players-div {
-  background: rgb(22, 1, 59);
 }
 
 .card-section-players {
