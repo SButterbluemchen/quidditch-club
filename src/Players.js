@@ -28,32 +28,58 @@ export default function Players() {
       });
   }, []);
 
+  // Get data from API and group OBJECTS in 1 OBJECT by position - using 'groupBy' function from below
   function getPlayerGroups(players) {
     const groupedPlayers = groupBy(
       players,
       (player) => player.attributes.position,
     );
+    //result = Map(5) {'Attrapeur' => Array(2), 'Batteur' => Array(4), 'Poursuiveur' => Array(6), 'Gardien' => Array(2), 'Entraîneur' => Array(1)}
+    // [[Entries]]
+      // 0: {"Attrapeur" => Array(2)}
+      // key: "Attrapeur"
+      // value: (2) [{…}, {…}]
+    // 1: {"Batteur" => Array(4)}
+    // 2: {"Poursuiveur" => Array(6)}
+    // 3: {"Gardien" => Array(2)}
+    // 4: {"Entraîneur" => Array(1)}
+    // size: 5
+    //Prototype : Map
 
+    //grouping function lists = players, key = position
+    // This function is needed because it is an object, not an array !
+    function groupBy(list, keyGetter) {
+      const map = new Map();
+      list.forEach((item) => {
+        const key = keyGetter(item);
+        const collection = map.get(key);
+        if (!collection) {
+          map.set(key, [item]);
+        } else {
+          collection.push(item);
+        }
+      });
+      return map;
+    }
+
+    // Add player map objects into an ARRAY by position - 1 ARRAY per position
+    //result = (5) [{…}, {…}, {…}, {…}, {…}]
+    // 0:
+    // players: (2) [{…}, {…}]
+    // position: "Attrapeur"
+    // [[Prototype]]: Object
+    // 1: {position: 'Batteur', players: Array(4)}
+    // 2: {position: 'Poursuiveur', players: Array(6)}
+    // 3: {position: 'Gardien', players: Array(2)}
+    // 4: {position: 'Entraîneur', players: Array(1)}
+    // length: 5
+    // [[Prototype]]: Array(0)
     const allPlayerGroups = [];
 
     groupedPlayers.forEach((element, key) => {
       allPlayerGroups.push({ position: key, players: element });
     });
     return allPlayerGroups;
-  }
-
-  function groupBy(list, keyGetter) {
-    const map = new Map();
-    list.forEach((item) => {
-      const key = keyGetter(item);
-      const collection = map.get(key);
-      if (!collection) {
-        map.set(key, [item]);
-      } else {
-        collection.push(item);
-      }
-    });
-    return map;
   }
 
   return (
