@@ -2,17 +2,15 @@ import React from 'react';
 
 const trainingplanColumn = (props) => {
   return (
-    <div className='trainingplan-column'>
-      <h4>{props.day}</h4>
-      <div>
-        <p className="training-time">{props.time}</p>
-        <p>{props.training}</p>
-      </div>
-      <div>
-        <p className="training-time">{props.time}</p>
-        <p>{props.training}</p>
-      </div>
-    </div>
+    <table className='trainingplan-column'>
+      <tr>
+        <th><h4>{props.day}</h4></th>
+      </tr>
+      <tr>
+        <td className="training-time">{props.time}</td>
+        <td>{props.training}</td>
+      </tr>
+    </table>
   );
 };
 

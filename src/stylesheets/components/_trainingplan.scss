@@ -5,29 +5,14 @@
 
 .trainingplan-column {
   width: 18rem;
-  border-top: 0.1rem solid $primary-color;
-  border-inline: 0.1rem solid $primary-color;
-  &:last-of-type {
-    border-bottom: 0.1rem solid $primary-color;
-  }
+  border-collapse: collapse;
   @include media(desktop) {
     width: 11rem;
-    border-inline: unset;
-    border-bottom: 0.1rem solid $primary-color;
-    &:nth-of-type(even) {
-      border-inline: 0.1rem solid $primary-color;
-    }
-    &:nth-of-type(1) {
-      border-left: 0.1rem solid $primary-color;
-    }
-    &:last-of-type {
-      border-right: 0.1rem solid $primary-color;
-    }
   }
-  div {
-    border-top: 0.1rem solid $primary-color;
+  tr {
     height: 4rem;
     padding: 0.5rem;
+    border: 0.1rem solid $primary-color;
     @include flex-wrap(wrap, center, center);
     .training-time {
       font-weight: 500;
