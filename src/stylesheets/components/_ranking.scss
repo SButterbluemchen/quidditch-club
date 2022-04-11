@@ -1,6 +1,9 @@
 .ranking-column {
-  table, td {
-    border: 2px solid red;
+  table {
     border-collapse: collapse;
+    border: 2px solid red;
+    td {
+      border: 2px solid red;
+    }
   }
 }

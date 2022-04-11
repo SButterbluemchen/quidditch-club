@@ -4,6 +4,7 @@ import PageTopFrames from './components/Frames/pageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
 import Trainingplan from './components/Trainingsplan/Trainingplan';
 import ImageTextBlock from './components/ImageTextBlock';
+import RankingTable from './components/Ranking/RankingTable';
 
 const Informations = () => {
   return (
@@ -11,6 +12,7 @@ const Informations = () => {
       <Navbar />
       <PageTopFrames />
       <Trainingplan />
+      <RankingTable />
       <ImageTextBlock sectionTitle='Bienvenu dans notre stade' image='/stadium2.jpeg' title='Un stade au coeur de Poudlard' />
       <ImageTextBlock articleClassName='right' image='/stadium.jpeg' title='Une pelouse de qualité pour plus de succès'/>
       <PageBottomFrames />
