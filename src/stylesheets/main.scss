@@ -18,11 +18,13 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/image-text-blocks',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
+  'components/trainingplan',
   'components/card',
   'components/pageframes',
   'components/timeline';
