@@ -1,9 +1,24 @@
 .ranking-column {
+  padding: 2rem 0rem;
   table {
     border-collapse: collapse;
-    border: 2px solid red;
-    td {
-      border: 2px solid red;
+    text-align: left;
+    margin: auto;
+    td, th {
+      border: 0.1rem double $primary-color;
+      width: 4rem;
+      height: 3rem;
+      padding: 0.5rem;
+      &:nth-of-type(2) {
+        width: 20rem;
+        @include media(tablet) {
+          width: 57rem;
+        }
+      }
+      .ranking-logo {
+        width: 2rem;
+        padding-right: 0.5rem;
+      }
     }
   }
 }

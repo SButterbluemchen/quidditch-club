@@ -10,7 +10,7 @@ const CardSection = (props) => {
         <img src="broom-gold.png" alt="broom-gold-logo" />
       </figure>
       <article className='card-section-players'>
-        {props.players.map(player => <Card key={player.id} infos={player.attributes}/>)};
+        {props.players.map(player => <Card key={player.id} infos={player.attributes}/>)}
       </article>
     </section>
   );
