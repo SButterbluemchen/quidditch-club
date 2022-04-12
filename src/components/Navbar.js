@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <section className="navbar container">
-      <a href='/home'>
+      <a href='/'>
         <article>
           <figure>
             <img src='logo-quidditch-white.png'/>
