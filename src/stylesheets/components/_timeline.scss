@@ -1,11 +1,23 @@
 .timeline-section {
-/* background-image: url('/public/hogwarts-background.webp');
-background-size: 100%; */
-background-color: red;
+background-image: url('/public/hogwarts-background.webp');
+background-size: 100vw 100vh;
+position: relative;
+}
+
+.timeline-title {
+  text-shadow: none; // suppression du comportement défaut non-adapté ici
+  color: $tertiary-color;
 }
 
 .timeline-date-color {
-  color: white;
+  color: $primary-color;
+}
+
+
+.vertical-timeline--two-columns .vertical-timeline-element-content{
+  background: $secondary-color;
+  border: 1px solid $primary-color;
+  box-shadow: none;
 }
 
 // class span générée dans le DOM
@@ -14,3 +26,4 @@ background-color: red;
   justify-content: center;
   align-items: center;
 }
+

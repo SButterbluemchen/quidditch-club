@@ -59,7 +59,7 @@ const Timeline = () => {
   //implémentation de la timeline à l'aide des alias importés plus haut
   return (
     <section className="timeline-section">
-      <h2>Timeline</h2>
+      <h2>Un peu de notre histoire</h2>
       <VerticalTimeline>
         {
           //itération sur le tableau d'objets timelineElements
