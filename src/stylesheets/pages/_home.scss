@@ -167,3 +167,113 @@ $heading-font-stack: 'Poppins', sans-serif;
 
 
 // part Events actualites //
+
+.events-container {
+    background-color: #0A0A1E;
+  }
+  
+  .events-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 0.625rem;
+    gap: 1.25rem;
+  }
+  
+  .events-cards-actu {
+    border-color: 0.125rem solid #BA9100;
+    border: 0.125rem solid #BA9100;
+    border-radius: 0.75rem;
+    padding: 0.9rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 28.75rem;
+    min-height: auto;
+    text-align: center;
+    color: #BA9100;
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 900px) {
+    .events-cards {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+
+// part donuts //
+
+
+// part map //
+
+.home-map {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+.map-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 18.75rem;
+    max-width: 21.875rem;
+    justify-content: center;
+    line-height: 1.2rem;
+    padding: 0;
+    gap: 0.9rem;
+  }
+
+.map-list {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7c6101;
+    line-height: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+  }
+  
+.map-alinea {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .map-subtitles {
+    color: #7c6101;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 900px) {
+    .map-column, .map-list {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      justify-content: center;
+      text-align: center;
+      max-width: 29.375rem;
+    }
+    .home-map {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      max-width: 29.375rem;
+    }
+  }
+
+  .linkme2 {
+    color: #c79c00;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .linkme2:hover {
+    color: aqua;
+  }
+  
+  
