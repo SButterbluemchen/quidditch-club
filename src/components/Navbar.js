@@ -34,15 +34,16 @@ export default function Navbar() {
 
   return (
     <section className="navbar container">
-      <a href='/'>
+      <a href="/">
         <article>
           <figure>
-            <img src='logo-quidditch-white.png'/>
+            <img src="logo-quidditch-white.png" />
           </figure>
           {windowWidth >= 600 && <h3>Quidditch Club</h3>}
         </article>
       </a>
-      <Menubar model={items}/>
+
+      <Menubar model={items} />
     </section>
   );
 }
