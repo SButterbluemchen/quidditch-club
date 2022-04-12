@@ -37,6 +37,7 @@
   .p-menubar-root-list {
     gap: 2rem;
     background: $tertiary-color;
+    z-index: 9999;
     @include media(desktop) {
       background-color: unset;
     }
