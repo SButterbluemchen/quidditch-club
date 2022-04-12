@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
-import PictoCard from './PictoCard';
+import PictoCard from './PictoPlayerCard';
 
 export default function Card(props) {
   
@@ -10,6 +10,9 @@ export default function Card(props) {
   function handlePlayerClick() {
     setIsActive(!isActive);
   }
+
+  // http://localhost:1337/uploads/harry_Potter_eca7d93075.jpeg
+  // {`http://localhost:1337${props.infos.image.data.attributes.url}`}
  
   return (
     <article className="card" onClick={handlePlayerClick}>
