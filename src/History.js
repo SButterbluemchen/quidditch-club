@@ -10,16 +10,20 @@ const History = () => {
       <Timeline/>
       {/* Composant Rulescard : dessin + un peu de description */}
       <Rulescard
-        img="./Broom.png"
-        description="Blabla descriptif"
+        img="./rules/green-headband.png"
+        description="Un·e gardien·ne par équipe porte un bandeau et mène le jeu du souafle"
       />
       <Rulescard
-        img="./Scar.png"
-        description="Bloblo descriptif"
+        img="./rules/black-headband.png"
+        description="Deux batteur·euses par équipe lancent des cognards sur leurs adversaires"
       />
       <Rulescard
-        img="./cup.png"
-        description="Blibli descriptif"
+        img="./rules/yellow-headband.png"
+        description="Un·e attrapeur·se dans chaque équipe est chargé·e d'attraper le vif d'or à partir de 18 minuntes de jeu"
+      />
+      <Rulescard
+        img="./rules/white-headband.png"
+        description="Trois poursuiveur·euses dans chaque équipe s'occupent de marquer des buts avec le souafle"
       />
     </>
   );
