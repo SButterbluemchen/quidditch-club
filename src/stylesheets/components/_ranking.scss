@@ -1,10 +1,10 @@
 .ranking-column {
-  padding: 2rem 0rem;
   table {
     border-collapse: collapse;
     text-align: left;
     margin: auto;
-    td, th {
+    td,
+    th {
       border: 0.1rem double $primary-color;
       width: 4rem;
       height: 3rem;
@@ -15,10 +15,15 @@
           width: 57rem;
         }
       }
-      .ranking-logo {
-        width: 2rem;
-        padding-right: 0.5rem;
-      }
     }
+    .ranking-team {
+      width: 20rem;
+    }
+  }
+  .rankingCaptions {
+    @include headingstyle(semi-light, small);
+    width: 95%;
+    margin-inline: auto;
+    padding-top: 0.5rem;
   }
 }
