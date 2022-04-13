@@ -1,0 +1,29 @@
+.ranking-column {
+  table {
+    border-collapse: collapse;
+    text-align: left;
+    margin: auto;
+    td,
+    th {
+      border: 0.1rem double $primary-color;
+      width: 4rem;
+      height: 3rem;
+      padding: 0.5rem;
+      &:nth-of-type(2) {
+        width: 20rem;
+        @include media(tablet) {
+          width: 57rem;
+        }
+      }
+    }
+    .ranking-team {
+      width: 20rem;
+    }
+  }
+  .rankingCaptions {
+    @include headingstyle(semi-light, small);
+    width: 95%;
+    margin-inline: auto;
+    padding-top: 0.5rem;
+  }
+}

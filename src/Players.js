@@ -86,10 +86,10 @@ export default function Players() {
   return (
     <section className="page-players">
       <Navbar />
-      {window.innerWidth >= 600 && <PageTopFrames />}
+      <PageTopFrames />
       <h2>Notre équipe de Quidditch</h2>
       {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)};
-      {window.innerWidth >= 600 && <PageBottomFrames />}
+      <PageBottomFrames />
     </section>
   );
 }
