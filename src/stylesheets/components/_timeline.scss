@@ -14,7 +14,7 @@ position: relative;
 }
 
 .vertical-timeline--two-columns .vertical-timeline-element-content{
-  background: $secondary-color;
+  background-color: rgba($secondary-color, 0.7);
   border: 0.063rem solid $primary-color;
   box-shadow: none;
 }

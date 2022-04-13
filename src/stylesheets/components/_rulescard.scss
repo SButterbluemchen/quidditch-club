@@ -1,3 +1,15 @@
+//Disposition en 2 colonnes
+.history-rulescard-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+//Colonne numéro 2 avec cartes en "miroir"
+.history-rulescard-section-group2 .rulescard-body {
+  flex-direction: row-reverse;
+}
+
+//Style des cartes
 .rulescard-card {
   padding: 5rem;
   @include flex-wrap(wrap, flex-start, center);
@@ -22,5 +34,13 @@
   @include media(mobile) {
     width: 10rem
   }
+}
 
+.history-rulescard-section-group2 .rulescard-description {
+  padding-right: 3rem;
+  width: 25rem;
+
+  @include media(mobile) {
+    width: 20rem
+  }
 }
