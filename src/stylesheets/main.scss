@@ -18,6 +18,7 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/broom-title',
   'layout/image-text-blocks',
   'layout/footer';
 
@@ -33,6 +34,7 @@
 
 // 6. Page-specific styles
 @import
+  'pages/history',
   'pages/home',
   'pages/players';
 

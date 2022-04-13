@@ -1,0 +1,10 @@
+.history-broom-logo {
+  width: 12rem;
+  margin-top: -1rem;
+}
+
+.broom-title {
+  @include flex-wrap(wrap, center, center);
+  flex-direction: column;
+  margin-bottom: 5rem;
+}

@@ -13,11 +13,14 @@ position: relative;
   color: $primary-color;
 }
 
-
 .vertical-timeline--two-columns .vertical-timeline-element-content{
   background: $secondary-color;
-  border: 1px solid $primary-color;
+  border: 0.063rem solid $primary-color;
   box-shadow: none;
+}
+
+#timeline-description {
+  color: black;
 }
 
 // class span générée dans le DOM
@@ -26,4 +29,3 @@ position: relative;
   justify-content: center;
   align-items: center;
 }
-

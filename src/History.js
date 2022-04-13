@@ -2,6 +2,7 @@ import React from 'react';
 import Timeline from './components/Timeline';
 import Navbar from './components/Navbar';
 import Rulescard from './components/Rulescard';
+import BroomTitle from './components/BroomTitle';
 
 const History = () => {
   return (
@@ -9,6 +10,9 @@ const History = () => {
       <Navbar/>
       <Timeline/>
       {/* Composant Rulescard : dessin + un peu de description */}
+      <BroomTitle
+        title="Les règles du Quidditch"
+      />
       <Rulescard
         img="./rules/green-headband.png"
         description="Un·e gardien·ne par équipe porte un bandeau et mène le jeu du souafle"
