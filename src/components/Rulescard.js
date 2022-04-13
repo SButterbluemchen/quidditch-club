@@ -8,9 +8,7 @@ const Rulescard = (props) => {
       <div className='rulescard-body'>
         <img className='rulescard-img' src={props.img}/>
         <p className='rulescard-description'>{props.description}</p>
-
       </div>
-
     </div>
   );
 };

@@ -19,7 +19,7 @@ const History = () => {
       />
       <Rulescard
         img="./rules/yellow-headband.png"
-        description="Un·e attrapeur·se dans chaque équipe est chargé·e d'attraper le vif d'or à partir de 18 minuntes de jeu"
+        description="Un·e attrapeur·se dans chaque équipe est chargé·e d'attraper le vif d'or à partir de 18 minutes de jeu"
       />
       <Rulescard
         img="./rules/white-headband.png"

@@ -1,5 +1,11 @@
 .rulescard-card {
   padding: 5rem;
+  @include flex-wrap(wrap, flex-start, center);
+}
+
+.rulescard-body {
+  display: flex;
+  align-items: center;
 }
 
 .rulescard-img {
@@ -10,4 +16,11 @@
 
 .rulescard-description {
   color: $primary-color;
+  width: 20rem;
+  padding-left: 3rem;
+
+  @include media(mobile) {
+    width: 10rem
+  }
+
 }
