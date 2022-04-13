@@ -1,0 +1,279 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$heading-font-stack: 'Poppins', sans-serif;
+
+// part one : cardclub //
+.club {
+    display: block;
+    background-color: #0A0A1E;
+    text-align: center;
+    justify-content: space-between;
+    min-height: 13.125rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1.875rem;
+    background-image: url(./components/img/bg-home-blue.jpg);
+    object-fit: cover;
+    background-size: 120vw 120vh;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  
+.club-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 1.125rem;
+  }
+  
+  .home-heading {
+    font-size: 2.4rem;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 2.4rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  
+.evenements {
+    /*
+    background-color: #0A0A1E;*/
+    border-color: 0.125rem solid #BA9100;
+    border: 0.125rem double #BA9100;
+    border-radius: 0.75rem;
+    padding: 0.9rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    width: 25rem;
+    height: 7.2rem;
+    text-align: center;
+    color: #BA9100;
+  }
+
+  .home-membres {
+    border-color: 0.125rem solid #BA9100;
+    border: 0.125rem solid #BA9100;
+    border-radius: 0.75rem;
+    padding: 0.9rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    width: 25rem;
+    height: 7.2rem;
+    text-align: center;
+    color: #BA9100;
+  }
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 900px) {
+    .club-cards {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+
+// part abonnement newsletter //
+
+.abonnement {
+    background-color: #BA9100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+
+.actunews {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 0.625rem;
+  }
+
+  .button-news {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    position: relative;
+    background-color: #0A0A1E;
+    border: none;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: #FFFFFF;
+    width: 3.125rem;
+    height: 3.125rem;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+
+// part presentation : //
+
+.presentation-container {
+    display: block;
+    background-color: #0A0A1E;
+    text-align: center;
+  }
+
+.bienvenue {
+    color: #BA9100;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 1.25rem;
+  }
+
+.presentation {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    line-height: 1.3rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .linkme {
+    color: #c79c00;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .linkme:hover {
+    color: aqua;
+  }
+
+
+// part Events actualites //
+
+.events-container {
+    background-color: #0A0A1E;
+  }
+  
+  .events-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 0.625rem;
+    gap: 1.25rem;
+  }
+  
+  .events-cards-actu {
+    border-color: 0.125rem solid #BA9100;
+    border: 0.125rem solid #BA9100;
+    border-radius: 0.75rem;
+    padding: 0.9rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 28.75rem;
+    min-height: auto;
+    text-align: center;
+    color: #BA9100;
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 900px) {
+    .events-cards {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+
+// part donuts //
+
+
+// part map //
+
+.home-map {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+.map-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 18.75rem;
+    max-width: 21.875rem;
+    justify-content: center;
+    line-height: 1.2rem;
+    padding: 0;
+    gap: 0.9rem;
+  }
+
+.map-list {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7c6101;
+    line-height: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+  }
+  
+.map-alinea {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .map-subtitles {
+    color: #7c6101;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 900px) {
+    .map-column, .map-list {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      justify-content: center;
+      text-align: center;
+      max-width: 29.375rem;
+    }
+    .home-map {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      max-width: 29.375rem;
+    }
+  }
+
+  .linkme2 {
+    color: #c79c00;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .linkme2:hover {
+    color: aqua;
+  }
+  
+  
