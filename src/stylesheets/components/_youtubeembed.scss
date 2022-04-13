@@ -1,0 +1,24 @@
+/* == VIDEO == */
+
+.video-resize {
+    width: 85%;
+    height: 85%;
+    border:#BA9100;
+    border-style: double;
+  }
+  
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 85%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
