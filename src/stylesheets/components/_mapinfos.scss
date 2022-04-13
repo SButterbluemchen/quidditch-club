@@ -1,0 +1,69 @@
+// part map //
+
+.home-map {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+.home-map-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 18.75rem;
+    max-width: 21.875rem;
+    justify-content: center;
+    line-height: 1.2rem;
+    padding: 0;
+    gap: 0.9rem;
+  }
+
+.home-map-list {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7c6101;
+    line-height: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+  }
+  
+.home-map-alinea {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+.home-map-subtitles {
+    color: #7c6101;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 900px) {
+    .home-map-column, .home-map-list {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+      justify-content: center;
+      text-align: center;
+      max-width: 29.375rem;
+    }
+    .home-map {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      max-width: 29.375rem;
+    }
+  }
+
+// lien "span" sur des mots, taille moyenne, pour tout le site //
+
+.linkme2 {
+    color: #c79c00;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+.linkme2:hover {
+    color: aqua;
+  }
+  
