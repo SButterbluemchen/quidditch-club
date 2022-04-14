@@ -115,6 +115,7 @@ export default function Players() {
     <section className="page-background">
       <Navbar />
       <PageTopFrames />
+      <Searchbar />
       <h2>Notre équipe de Quidditch</h2>
       <section className='searchbar-container'>
         <div>
