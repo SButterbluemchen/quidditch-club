@@ -1,6 +1,5 @@
 .trainingplan {
   @include flex-wrap(wrap, center);
-  text-align: center;
 }
 
 .trainingplan-column {
@@ -10,15 +9,18 @@
     width: 11rem;
   }
   tr {
+    border: 0.1rem solid $primary-color;
     height: 4rem;
     padding: 0.5rem;
-    border: 0.1rem solid $primary-color;
     @include flex-wrap(wrap, center, center);
     .training-time {
       font-weight: 500;
       @include media(desktop) {
         margin-bottom: -0.5rem;
       }
+    }
+    h4 {
+      margin: auto;
     }
   }
 }
