@@ -1,0 +1,41 @@
+.image-text-block {
+  @include flex-wrap(wrap, center, center);
+  margin: 0rem;
+  @include media(tablet) {
+    .right {
+      order: -1;
+      h4,
+      p {
+        text-align: right;
+      }
+    }
+  }
+  article {
+    margin: 0 0 2rem 0;
+    width: 90%;
+    h4 {
+      text-align: left;
+      color: white;
+      font-weight: 500;
+    }
+    @include media(tablet) {
+      width: 65%;
+    }
+    @include media(desktop) {
+      width: 45%;
+    }
+  }
+  figure {
+    width: 100%;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+    @include media(tablet) {
+      width: 30rem;
+      margin: 1.5rem;
+    }
+    img {
+      width: 100%;
+      border: 0.3rem double $primary-color;
+      // box-shadow: 0rem 0rem 0rem 0.7rem $tertiary-color, 0rem 0rem 0rem 0.8rem $primary-color;
+    }
+  }
+}

@@ -1,4 +1,6 @@
 .page-frames {
+  display: none;
+  @include media(tablet) {
   @include flex-wrap(nowrap, space-between);
   width: 98%;
   position: absolute;
@@ -16,4 +18,5 @@
 
 .frame-bottom {
   bottom: 0.5%;
+}
 }

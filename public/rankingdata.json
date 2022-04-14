@@ -1,0 +1,46 @@
+{
+  "data": [
+      {
+          "id": 1,
+          "attributes": {
+              "rank": 1,
+              "team": "Poudlard Phoenixs",
+              "matchesPlayed": "20",
+              "matchesWon": "15",
+              "matchesLost": "2",
+              "points": 30,
+              "createdAt": "2022-04-11T13:58:36.741Z",
+              "updatedAt": "2022-04-11T13:58:38.098Z",
+              "publishedAt": "2022-04-11T13:58:38.093Z"
+          }
+      },
+      {
+          "id": 2,
+          "attributes": {
+              "rank": 2,
+              "team": "Macarons de Beauxbâtons",
+              "matchesPlayed": "19",
+              "matchesWon": "12",
+              "matchesLost": "3",
+              "points": 26,
+              "createdAt": "2022-04-12T09:38:55.926Z",
+              "updatedAt": "2022-04-12T09:39:01.216Z",
+              "publishedAt": "2022-04-12T09:39:01.213Z"
+          }
+      },
+      {
+        "id": 3,
+        "attributes": {
+            "rank": 3,
+            "team": "Durmstrang Dragons",
+            "matchesPlayed": "18",
+            "matchesWon": "10",
+            "matchesLost": "6",
+            "points": 23,
+            "createdAt": "2022-04-12T09:38:55.926Z",
+            "updatedAt": "2022-04-12T09:39:01.216Z",
+            "publishedAt": "2022-04-12T09:39:01.213Z"
+        }
+    }
+  ]
+}
