@@ -5,8 +5,9 @@ import Home from './Home';
 import Players from './Players';
 import History from './History';
 import Informations from './Informations';
+import { Suspense } from 'react';
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -16,5 +17,13 @@ export default function App() {
         <Route path="/history" element={<History />} />
       </Routes>
     </BrowserRouter>
+  );
+}
+
+export default function WrappedApp() {
+  return (
+    <Suspense fallback="...is loading">
+      <App />
+    </Suspense>
   );
 }
