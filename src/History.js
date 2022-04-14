@@ -9,7 +9,6 @@ const History = () => {
     <>
       <Navbar/>
       <Timeline/>
-      {/* Composant Rulescard : dessin + un peu de description */}
       <BroomTitle
         title="Les règles du Quidditch"
       />
@@ -32,14 +31,14 @@ const History = () => {
             description="Trois poursuiveur·euses dans chaque équipe s'occupent de marquer des buts avec le souafle"
           />
         </div>
-        
+
         <section className='history-section-middle'>
           <div className='history-bubble'>
             <p>Tous les joueur·euses sur le terrain sont soumis·es à la même règle des genres, ou règles des 4 maximum :<br/>Pas plus de 4 personnes du même genre par équipe en même temps sur le terrain. Cette règle est primordiale pour assurer que le Quidditch reste mixte et inclusif</p>
           </div>
-          <div>
+          <a href='https://drive.google.com/file/d/1BJGoErZ94y9bGcMMcZDv8GdHXP8vHwH0/view' target={'blank'}>
             <img className='history-img-harry' src="./rules/harry-quidditch.png" alt="Harry Potter sur son balai" />
-          </div>
+          </a>
         </section>
 
         <div className='history-rulescard-section-group2'>
