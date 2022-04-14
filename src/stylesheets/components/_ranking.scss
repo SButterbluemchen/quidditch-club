@@ -1,4 +1,6 @@
 .ranking-column {
+  max-width: 95%;
+  margin: auto;
   table {
     border-collapse: collapse;
     text-align: left;
@@ -22,8 +24,8 @@
   }
   .rankingCaptions {
     @include headingstyle(semi-light, small);
-    width: 95%;
-    margin-inline: auto;
     padding-top: 0.5rem;
+    max-width: 80%;
+    margin: auto;
   }
 }
