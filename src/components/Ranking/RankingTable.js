@@ -27,8 +27,6 @@ const RankingTable = () => {
       .then(data => setRankingData(data.data));
   }, []);
 
-  console.log(rankingData);
-
   return (
     <>
       <h2>Ranking 2022</h2>

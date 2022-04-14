@@ -1,0 +1,120 @@
+{
+  "trainingdata": [
+      {
+        "id": 1,
+        "attributes": {
+          "day": "MONDAY",
+          "trainings": [
+            {
+              "begin": "17:30:00",
+              "end": "18:30:00",
+              "name": "catcher special"
+            },
+            {
+              "begin": "18:30:00",
+              "end": "19:30:00",
+              "name": "general training"
+            }
+          ],
+            "createdAt": "2022-04-11T13:58:36.741Z",
+            "updatedAt": "2022-04-11T13:58:38.098Z",
+            "publishedAt": "2022-04-11T13:58:38.093Z"
+        }
+      },
+      {
+        "id": 2,
+        "attributes": {
+          "day": "TUESDAY",
+          "trainings": [
+            {
+              "begin": "17:45:00",
+              "end": "18:45:00",
+              "name": "keeper special"
+            },
+            {
+              "begin": "18:45:00",
+              "end": "19:45:00",
+              "name": "general training"
+            }
+          ],
+            "createdAt": "2022-04-11T13:58:36.741Z",
+            "updatedAt": "2022-04-11T13:58:38.098Z",
+            "publishedAt": "2022-04-11T13:58:38.093Z"
+        }
+      },
+    {
+      "id": 3,
+      "attributes": {
+          "day": "WEDNESDAY",
+          "trainings": [
+            {
+            "begin": "17:45:00",
+            "end": "18:45:00",
+            "name": "keeper special"
+          },
+          null
+        ],
+          "createdAt": "2022-04-11T13:58:36.741Z",
+          "updatedAt": "2022-04-11T13:58:38.098Z",
+          "publishedAt": "2022-04-11T13:58:38.093Z"
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+          "day": "THURSDAY",
+          "trainings": [
+            {
+            "begin": "16:45:00",
+            "end": "17:45:00",
+            "name": "general training"
+          },
+          null
+        ],
+          "createdAt": "2022-04-11T13:58:36.741Z",
+          "updatedAt": "2022-04-11T13:58:38.098Z",
+          "publishedAt": "2022-04-11T13:58:38.093Z"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+          "day": "FRIDAY",
+          "trainings": [
+            null,
+            {
+            "begin": "18:45:00",
+            "end": "20:45:00",
+            "name": "general training"
+          }
+        ],
+          "createdAt": "2022-04-11T13:58:36.741Z",
+          "updatedAt": "2022-04-11T13:58:38.098Z",
+          "publishedAt": "2022-04-11T13:58:38.093Z"
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+          "day": "SATURDAY",
+          "trainings": [null, null],
+          "createdAt": "2022-04-11T13:58:36.741Z",
+          "updatedAt": "2022-04-11T13:58:38.098Z",
+          "publishedAt": "2022-04-11T13:58:38.093Z"
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+          "day": "SUNDAY",
+          "trainings": [
+            {"name": "Match"},
+            null
+        ],
+          "createdAt": "2022-04-11T13:58:36.741Z",
+          "updatedAt": "2022-04-11T13:58:38.098Z",
+          "publishedAt": "2022-04-11T13:58:38.093Z"
+      }
+    }
+  ]
+}

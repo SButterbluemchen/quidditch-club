@@ -1,15 +1,21 @@
-import React from 'react';
-import TrainingplanColumn from './TrainingplanColumn';
+import React, { useState, useEffect } from 'react';
+import TrainingplanRow from './TrainingplanRow';
 
 const trainingplan = () => {
 
-  const weekdays = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday', 'Sunday'];
+  const [trainingData, setTrainingData] = useState([]);
+
+  useEffect(() => {
+    fetch('/trainingdata.json')
+      .then(res => res.json())
+      .then(data => setTrainingData(data.trainingdata));
+  }, []);
 
   return (
     <>
       <h2>Plan d&apos;entraînement</h2>
       <div className='trainingplan'>
-        {weekdays.map(weekday => <TrainingplanColumn key={weekday.id} day={weekday} time="17h30 - 18h30" training="Entraînement"/>)}
+        {trainingData.map(trainingItem => <TrainingplanRow key={trainingItem.id} trainingAttributes={trainingItem.attributes}/>)}
       </div>
     </>
   );
