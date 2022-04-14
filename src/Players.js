@@ -3,6 +3,7 @@ import CardSection from './components/PlayerCards/PlayerCardSection';
 import React, {useEffect, useState} from 'react';
 import PageTopFrames from './components/Frames/pageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
+import Searchbar from './components/Searchbar';
 
 export default function Players() {
 
@@ -87,8 +88,9 @@ export default function Players() {
     <section className="page-players">
       <Navbar />
       <PageTopFrames />
+      <Searchbar />
       <h2>Notre équipe de Quidditch</h2>
-      {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)};
+      {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)}
       <PageBottomFrames />
     </section>
   );
