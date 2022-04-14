@@ -91,3 +91,16 @@
   .footer-FaFacebook {
     fill: #fff;
   }
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 998px) {
+  .footer-columns {
+    flex-direction: column;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    justify-content: center;
+    text-align: center;
+    max-width: 29.375rem;
+  }
+  
+}
