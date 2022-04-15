@@ -88,8 +88,8 @@ export default function Players() {
     <section className="page-players">
       <Navbar />
       <PageTopFrames />
-      <Searchbar />
       <h2>Notre équipe de Quidditch</h2>
+      <Searchbar />
       {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)}
       <PageBottomFrames />
     </section>
