@@ -1,9 +1,7 @@
 //History middle section
 .history-section-middle {
-  display: flex;
+  @include flex-wrap(wrap, center, center)
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 //History img
 .history-img-harry {
