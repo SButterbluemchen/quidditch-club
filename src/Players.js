@@ -3,12 +3,12 @@ import CardSection from './components/PlayerCards/PlayerCardSection';
 import React, {useEffect, useState} from 'react';
 import PageTopFrames from './components/Frames/pageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
-import Searchbar from './components/Searchbar';
 
 export default function Players() {
 
   const [isLoading, setIsLoading] = useState(true);
   const [playerGroups, setPlayerGroups] = useState([]);
+  const [allPlayers, setAllPlayers] = useState([]);
 
   const token = '7fb39549098e45b77abd3789b342e43e15d50e2e1681ccc2a5a349cc3f168f2791ee3a327a9db867d9248ca4225f3ef92eb9a2554894b692c6b9842ac555bce9b2c70924a752605a7f09876df23df3aadf46a97c6012d0eb994bbe8600f456dd40ac152ec3073eed375bba4a6fe38391c846591e2d2a01171dc3f86fc48a5cdf';
  
@@ -24,12 +24,12 @@ export default function Players() {
       })
       .then(response => response.json())
       .then(data => { 
+        setAllPlayers(data.data);
         const allPlayerGroups = getPlayerGroups(data.data);
         setPlayerGroups(allPlayerGroups);
         setIsLoading(false);
       });
   }, []);
-
   // Get data from API and group OBJECTS in 1 OBJECT by position - using 'groupBy' function from below
   function getPlayerGroups(players) {
     const groupedPlayers = groupBy(
@@ -84,13 +84,28 @@ export default function Players() {
     return allPlayerGroups;
   }
 
+  // SEARCHBAR
+  const [query, setQuery] = useState('');
+
   return (
     <section className="page-players">
       <Navbar />
       <PageTopFrames />
       <h2>Notre équipe de Quidditch</h2>
-      <Searchbar />
+      <section className='searchbar-container'>
+        <div>
+          <input placeholder="Je cherche ..." onChange={event => setQuery(event.target.value)}/>
+        </div>
+      </section>
       {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)}
+      {allPlayers.filter(player => {
+        if (query !== '' && player.attributes.firstName.toLowerCase().includes(query.toLowerCase())) { 
+          return player;
+        }
+      }
+      ).map(player => 
+        <li key={player.id}>{player.attributes.firstName}</li>
+      )}
       <PageBottomFrames />
     </section>
   );
