@@ -121,6 +121,14 @@ export default function Players() {
         </div>
       </section>
       {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)}
+      {allPlayers.filter(player => {
+        if (query !== '' && player.attributes.firstName.toLowerCase().includes(query.toLowerCase())) { 
+          return player;
+        }
+      }
+      ).map(player => 
+        <li key={player.id}>{player.attributes.firstName}</li>
+      )}
       <PageBottomFrames />
     </section>
   );
