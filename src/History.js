@@ -3,12 +3,21 @@ import Timeline from './components/Timeline';
 import Navbar from './components/Navbar';
 import Rulescard from './components/Rulescard';
 import BroomTitle from './components/BroomTitle';
+import YoutubeHistory from './components/YoutubeHistory';
 
 const History = () => {
   return (
     <>
       <Navbar/>
       <Timeline/>
+      <BroomTitle
+        title="Démonstration du Quidditch"
+      />
+      <section className='history-youtube-section'>
+        <YoutubeHistory
+          src='https://www.youtube.com/embed/C0cfigo8iKM'
+        />
+      </section>
       <BroomTitle
         title="Les règles du Quidditch"
       />

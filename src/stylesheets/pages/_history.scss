@@ -1,6 +1,6 @@
 //History middle section
 .history-section-middle {
-  @include flex-wrap(wrap, center, center)
+  @include flex-wrap(wrap, center, center);
   flex-direction: column;
 }
 //History img
