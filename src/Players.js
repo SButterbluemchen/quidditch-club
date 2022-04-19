@@ -129,6 +129,16 @@ export default function Players() {
       ).map(player => 
         <li key={player.id}>{player.attributes.firstName}</li>
       )}
+      {/* {isLoading ? 'Loading...' : allPlayers.filter(player => {
+        if (query === '') {
+          return player;
+        }
+        else if (query !== '' && player.attributes.firstName.toLowerCase().includes(query.toLowerCase())) { 
+          return player;
+        }
+      }).map(player => 
+        playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)
+      )} */}
       <PageBottomFrames />
     </section>
   );
