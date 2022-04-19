@@ -1,2 +1,15 @@
 .inscription-form {
+  border: 0.1rem solid $primary-color;
+  padding: 2rem;
+  fieldset {
+    border: none;
+  }
+  .main-inscription-infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    input {
+      width: 20rem;
+    }
+  }
 }
