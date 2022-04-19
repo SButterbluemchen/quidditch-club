@@ -5,6 +5,7 @@ import {
 } from 'react-vertical-timeline-component/dist-modules';
 import 'react-vertical-timeline-component/style.min.css';
 import BludgerIcon from './BludgerIcon';
+import BroomTitle from './BroomTitle';
 //import TimelineImage from './TimelineImage';
 
 //Données 'en dur"
@@ -59,7 +60,9 @@ const Timeline = () => {
   //implémentation de la timeline à l'aide des alias importés plus haut
   return (
     <section className="timeline-section">
-      <h2>Timeline</h2>
+      <BroomTitle
+        title="Notre histoire"
+      />
       <VerticalTimeline>
         {
           //itération sur le tableau d'objets timelineElements
