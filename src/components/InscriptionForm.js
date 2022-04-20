@@ -26,7 +26,7 @@ const InscriptionForm = () => {
   );
 
   function handleChange(event) {
-    const {value, name, checked, type} = event.target;
+    const {value, name, checked, type, id} = event.target;
     setFormData(prevFormData => {
       return {
         ...prevFormData,
