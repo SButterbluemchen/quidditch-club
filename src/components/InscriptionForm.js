@@ -5,6 +5,14 @@ const InscriptionForm = () => {
   const [catcherChecked, setCatcherChecked] = useState(false);
   const [batterChecked, setBatterChecked] = useState(false);
 
+  const handleCatcherChange = () => {
+    setCatcherChecked(!catcherChecked);
+  };
+
+  const handleBatterChange = () => {
+    setBatterChecked(!batterChecked);
+  };
+
   const [formData, setFormData] = useState(
     {
       firstName: '',
@@ -18,18 +26,13 @@ const InscriptionForm = () => {
   );
 
   function handleChange(event) {
-    const {value, name, checked, type, id} = event.target;
+    const {value, name, checked, type} = event.target;
     setFormData(prevFormData => {
       return {
         ...prevFormData,
-        [name]: value,
+        [name]: type === 'checkbox' ? checked : value,
       };
     });
-    if (id === 'catcher') {
-      setCatcherChecked(!catcherChecked);
-    } else if (id === 'batter') {
-      setBatterChecked(!batterChecked);
-    }
   }
 
   function handleSubmit(event) {
@@ -66,7 +69,7 @@ const InscriptionForm = () => {
           <label htmlFor="noQuidditchPlayer">Non</label>
           <br />
           {formData.player === 'true' &&
-          <fieldset>
+          <div>
             <input
               type="text"
               name="clubName"
@@ -79,10 +82,10 @@ const InscriptionForm = () => {
                 <input 
                   type="checkbox"
                   id="catcher"
-                  checked={catcherChecked}
+                  value={catcherChecked}
                   name="positions"
-                  value={formData.positions === 'catcher'}
-                  onChange={handleChange}
+                  checked={formData.positions.push('catcher')}
+                  onChange={handleCatcherChange}
                 />
                 <label htmlFor="position">Attrapeur</label>
               </li>
@@ -90,10 +93,10 @@ const InscriptionForm = () => {
                 <input 
                   type="checkbox"
                   id="batter"
-                  checked={batterChecked}
+                  value={batterChecked}
                   name="positions"
-                  value={formData.positions === 'batter'}
-                  onChange={handleChange}
+                  checked={formData.positions.push('batter')}
+                  onChange={handleBatterChange}
                 />
                 <label htmlFor="position">Batteur</label>
               </li>
@@ -118,35 +121,37 @@ const InscriptionForm = () => {
                 <label htmlFor="position">Gardien</label>
               </li> */}
             </ul>
-          </fieldset>
+          </div>
           }
         </fieldset>
         <fieldset className="main-inscription-infos">
-          <input
-            type="text"
-            name="firstName"
-            placeholder="Prénom"
-            onChange={handleChange}
-            value={formData.firstName}
-            required={true}
-          />
-          <input
-            type="text"
-            placeholder="Nom"
-            name="lastName"
-            onChange={handleChange}
-            value={formData.lastName}
-            required={true}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            onChange={handleChange}
-            value={formData.email}
-            required={true}
-          />
-          <textarea 
+          <div>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="Prénom"
+              onChange={handleChange}
+              value={formData.firstName}
+              required={true}
+            />
+            <input
+              type="text"
+              placeholder="Nom"
+              name="lastName"
+              onChange={handleChange}
+              value={formData.lastName}
+              required={true}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              onChange={handleChange}
+              value={formData.email}
+              required={true}
+            />
+          </div>
+          <textarea
             value={formData.message}
             placeholder="Votre message"
             name="message"
