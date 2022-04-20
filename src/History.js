@@ -4,25 +4,23 @@ import Navbar from './components/Navbar';
 import Rulescard from './components/Rulescard';
 import BroomTitle from './components/BroomTitle';
 import YoutubeHistory from './components/YoutubeHistory';
+import ArrowToBeginning from './components/ArrowToBeginning';
 
 const History = () => {
   return (
     <>
-      <Navbar/>
-      <Timeline/>
-      <BroomTitle
-        title="Démonstration du Quidditch"
-      />
-      <section className='history-youtube-section'>
-        <YoutubeHistory
-          src='https://www.youtube.com/embed/C0cfigo8iKM'
-        />
+      <Navbar />
+      <div id='anchor-id'></div>
+      <Timeline />
+      <ArrowToBeginning />
+      <BroomTitle title="Démonstration du Quidditch" />
+      <section className="history-youtube-section">
+        <YoutubeHistory src="https://www.youtube.com/embed/C0cfigo8iKM" />
       </section>
-      <BroomTitle
-        title="Les règles du Quidditch"
-      />
-      <section className='history-rulescard-section'>
-        <div className='history-rulescard-section-group1'>
+      <ArrowToBeginning />
+      <BroomTitle title="Les règles du Quidditch" />
+      <section className="history-rulescard-section">
+        <div className="history-rulescard-section-group1">
           <Rulescard
             img="./rules/green-headband.png"
             description="Un·e gardien·ne par équipe porte un bandeau et mène le jeu du souafle"
@@ -41,16 +39,29 @@ const History = () => {
           />
         </div>
 
-        <section className='history-section-middle'>
-          <div className='history-bubble'>
-            <p>Tous les joueur·euses sur le terrain sont soumis·es à la même règle des genres, ou règles des 4 maximum :<br/>Pas plus de 4 personnes du même genre par équipe en même temps sur le terrain. Cette règle est primordiale pour assurer que le Quidditch reste mixte et inclusif</p>
+        <section className="history-section-middle">
+          <div className="history-bubble">
+            <p>
+              Tous les joueur·euses sur le terrain sont soumis·es à la même
+              règle des genres, ou règles des 4 maximum :<br />
+              Pas plus de 4 personnes du même genre par équipe en même temps sur
+              le terrain. Cette règle est primordiale pour assurer que le
+              Quidditch reste mixte et inclusif
+            </p>
           </div>
-          <a href='https://drive.google.com/file/d/1BJGoErZ94y9bGcMMcZDv8GdHXP8vHwH0/view' target={'blank'}>
-            <img className='history-img-harry' src="./rules/harry-quidditch.png" alt="Harry Potter sur son balai" />
+          <a
+            href="https://drive.google.com/file/d/1BJGoErZ94y9bGcMMcZDv8GdHXP8vHwH0/view"
+            target={'blank'}
+          >
+            <img
+              className="history-img-harry"
+              src="./rules/harry-quidditch.png"
+              alt="Harry Potter sur son balai"
+            />
           </a>
         </section>
 
-        <div className='history-rulescard-section-group2'>
+        <div className="history-rulescard-section-group2">
           <Rulescard
             img="./rules/souafle.png"
             description="Le souafle est une balle de volley utilisée pour marquer des buts à travers les anneaux adverses. Chaque but marqué vaut 10 points"
@@ -65,6 +76,8 @@ const History = () => {
           />
         </div>
       </section>
+      <ArrowToBeginning />
+      <BroomTitle title="Les tenues au Quidditch" />
     </>
   );
 };

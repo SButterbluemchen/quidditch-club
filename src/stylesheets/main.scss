@@ -17,6 +17,7 @@
 
 // 4. Layout-related sections
 @import
+  'layout/arrow-to-beggining',
   'layout/header',
   'layout/broom-title',
   'layout/image-text-blocks',
@@ -32,7 +33,7 @@
   'components/rulescard',
   'components/inscriptionForm',
   'components/timeline',
-  'components/youtube-test';
+  'components/youtube-history';
 
 // 6. Page-specific styles
 @import
