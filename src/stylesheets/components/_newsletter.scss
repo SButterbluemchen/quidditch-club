@@ -1,0 +1,109 @@
+/* part newsletter */
+.abonnement {
+    background-color: #BA9100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+  
+  .actunews {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 200;
+    vertical-align: middle;
+  }
+  
+  
+  .button-news {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    padding: 0.625rem;
+    position: relative;
+    background-color: #0A0A1E;
+    border: none;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: #FFFFFF;
+    width: 3.2rem;
+    height: 3.2rem;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  /*
+  .button-news:after {
+    content: "";
+    background: #1b0446;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  .button-news:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  */
+  .placeholder {
+    color: #0A0A1E;
+  }
+  
+  .newsletter-email {
+    display: flex;
+    width: auto;
+    min-width: 11.25rem;
+    max-width: 13.125rem;
+    border-radius: 0.5rem;
+    padding: 0.625rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: auto;
+  }
+  
+  @media (max-width: 900px) {
+    .abonnement {
+      flex-direction: column;
+    }
+    .actunews {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .newsletter-email {
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+    }
+    /*
+    .button-news {
+      justify-content: center;
+      text-align: center;
+    }*/
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text] {
+    width: 100%;
+    min-height: 32px;
+    margin: 4px 0;
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background-color: #0A0A1E;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    box-sizing: border-box;
+  }
