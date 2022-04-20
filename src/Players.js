@@ -37,14 +37,13 @@ export default function Players() {
 
   function setAllPlayersGroups() {
     const filteredPlayers = query.length > 0 ? allPlayers.filter(player => {
-      if (query !== '' && player.attributes.firstName.toLowerCase().includes(query.toLowerCase())) { 
+      if (query !== '' && player.attributes.firstName.toLowerCase().includes(query.toLowerCase()) || player.attributes.lastName.toLowerCase().includes(query.toLowerCase()) || player.attributes.broom.toLowerCase().includes(query.toLowerCase())) { 
         return player;
       }
     }
     ) : allPlayers;
 
     const allPlayerGroups = getPlayerGroups(filteredPlayers);
-
     setPlayerGroups(allPlayerGroups);
   }
 
@@ -99,8 +98,20 @@ export default function Players() {
     groupedPlayers.forEach((element, key) => {
       allPlayerGroups.push({ position: key, players: element });
     });
-    return allPlayerGroups;
+    return allPlayerGroups.sort((a,b) => {
+      let pa = a.position.toLowerCase(),
+        pb = b.position.toLowerCase();
+      if (pa < pb) {
+        return -1;
+      }
+      else if (pa > pb) {
+        return 1;
+      }
+      return 0;
+    });
   }
+
+  console.log(playerGroups);
 
   return (
     <section className="page-players">
