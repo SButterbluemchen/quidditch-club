@@ -3,6 +3,7 @@ import CardSection from './components/PlayerCards/PlayerCardSection';
 import React, {useEffect, useState} from 'react';
 import PageTopFrames from './components/Frames/pageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
+import { token } from './components/token';
 
 export default function Players() {
 
@@ -11,8 +12,6 @@ export default function Players() {
   const [allPlayers, setAllPlayers] = useState([]);
 
   const [query, setQuery] = useState('');
-
-  const token = '7fb39549098e45b77abd3789b342e43e15d50e2e1681ccc2a5a349cc3f168f2791ee3a327a9db867d9248ca4225f3ef92eb9a2554894b692c6b9842ac555bce9b2c70924a752605a7f09876df23df3aadf46a97c6012d0eb994bbe8600f456dd40ac152ec3073eed375bba4a6fe38391c846591e2d2a01171dc3f86fc48a5cdf';
  
   useEffect(() => {
     const query = 'populate=%2A';
