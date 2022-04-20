@@ -133,3 +133,35 @@
     transform: translatey(0);
   }
 }
+
+//OUTFITS
+
+.history-houses-filter {
+  @include flex-wrap(wrap, center, center);
+}
+
+.history-houses-list {
+  @include flex-wrap(wrap, center, center);
+}
+
+.house-image {
+  width: 50rem;
+  border: 0.1rem double $primary-color;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.history-house-filter-text {
+  margin: 2rem;
+  @include flex-wrap(wrap, center, center);
+  flex-direction: column;
+}
+
+.history-p {
+  padding: 1rem;
+}
+
+#house-input {
+  border: 1px solid $primary-color;
+  text-align: center;
+}

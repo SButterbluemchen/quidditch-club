@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Timeline from './components/Timeline';
 import Navbar from './components/Navbar';
 import Rulescard from './components/Rulescard';
@@ -7,6 +7,49 @@ import YoutubeHistory from './components/YoutubeHistory';
 import ArrowToBeginning from './components/ArrowToBeginning';
 
 const History = () => {
+
+  const housesList = [
+    {
+      name: 'Gryffindor',
+      src: './outfits/gryffindor.jpg',
+    },
+
+    {
+      name: 'Hufflepuff',
+      src: './outfits/hufflepuff.jpg',
+    },
+    {
+      name: 'Revenclaw',
+      src: './outfits/revenclaw.jpg'
+    },
+    {
+      name: 'Slytheryn',
+      src: './outfits/slytherin.jpg'
+    }
+  ];
+
+  //Filtre
+  const [filteredList, setFilteredList] = useState(housesList);
+  //Maisons Hogwarts
+  const [selectedHouse, setSelectedHouse] = useState('');
+
+  const filterByHouse = (filteredData) => {
+    if (!selectedHouse) {
+      return filteredData;
+    }
+    const filteredHouses = filteredData.filter((house) => house.name.split(' ').indexOf(selectedHouse) !== -1);
+    return filteredHouses;
+  };
+
+  const handleHouseChange = (e) => {
+    setSelectedHouse(e.target.value);
+  };
+
+  useEffect(() => {
+    let filteredData = filterByHouse(housesList);
+    setFilteredList(filteredData);
+  }, [selectedHouse]);
+
   return (
     <>
       <Navbar />
@@ -18,6 +61,7 @@ const History = () => {
         <YoutubeHistory src="https://www.youtube.com/embed/C0cfigo8iKM" />
       </section>
       <ArrowToBeginning />
+
       <BroomTitle title="Les règles du Quidditch" />
       <section className="history-rulescard-section">
         <div className="history-rulescard-section-group1">
@@ -77,7 +121,36 @@ const History = () => {
         </div>
       </section>
       <ArrowToBeginning />
-      <BroomTitle title="Les tenues au Quidditch" />
+
+      <BroomTitle title="Les tenues de Quidditch" />
+      <section>
+        <div className='history-houses-filter'>
+          <div className='history-house-filter-text'>
+            <p className='history-p'>Choisis ta maison préférée :</p>
+            <select
+              id='house-input'
+              value={selectedHouse}
+              onChange={handleHouseChange}
+            >
+              <option value=''>Toutes les maisons</option>
+              <option value='Gryffindor'>Gryffindor</option>
+              <option value='Hufflepuff'>Hufflepuff</option>
+              <option value='Revenclaw'>Revenclaw</option>
+              <option value='Slytheryn'>Slytheryn</option>
+            </select>
+          </div>
+        </div>
+
+      </section>
+
+      <section className='history-houses-list'>
+        {filteredList.map((item, index) => (
+          <div className='house-item' key={index}>
+            <img className='house-image' src={item.src} alt='image de maison Harry Potter'/>
+          </div>
+        ))}
+      </section>
+      <ArrowToBeginning />
     </>
   );
 };
