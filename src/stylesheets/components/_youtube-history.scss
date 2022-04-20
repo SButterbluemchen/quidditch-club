@@ -1,0 +1,7 @@
+.history-youtube-container {
+  @include flex-wrap(wrap, center, center);
+}
+
+.history-youtube-iframe {
+  border: 0.1rem double $primary-color;
+}
