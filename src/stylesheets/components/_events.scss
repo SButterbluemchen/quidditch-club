@@ -1,0 +1,90 @@
+/* evenements */
+.events-container {
+    background-color: #0A0A1E;
+  }
+  
+  .events-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 0.625rem;
+    gap: 1.5rem;
+  }
+  
+  .events-cards-actu {
+    border-color: 0.125rem solid #BA9100;
+    border: 0.125rem solid #BA9100;
+    border-radius: 0.75rem;
+    padding: 0.8rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 27rem;
+    min-height: auto;
+    text-align: center;
+    color: #BA9100;
+  }
+  
+    /* == TITLES == */
+  
+  .home-titles {
+      color: #BA9100;
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-align: center;
+      padding-top: 1.25rem;
+      padding-bottom: 0.5rem;
+    }
+  .home-subtitles {
+      color: #BA9100;
+      font-size: 1.3rem;
+      padding-top: 0.5rem;
+      margin: 1.25rem;
+      justify-content: center;
+      text-align: center;
+    }
+  .home-subtitles2 {
+      color: #fff;
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      padding: 0;
+    }
+  
+    /* == VIDEO == */
+  
+  .events-video-resize {
+      width: 85%;
+      height: 85%;
+      border:#BA9100;
+      border-style: double;
+    }
+  .events-video-responsive {
+      overflow: hidden;
+      padding-bottom: 85%;
+      position: relative;
+      height: 0;
+    }
+  .events-video-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  
+    
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 900px) {
+      .events-cards {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-left: 2.5rem;
+      }
+    }
+    
+      padding-left: 2rem;
+    }
+  }
