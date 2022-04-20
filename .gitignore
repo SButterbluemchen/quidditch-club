@@ -31,3 +31,8 @@ main.css.map
 *.css.map
 *.sass.map
 *.scss.map
+
+# API token
+.token.js
+token.js
+/token.js
