@@ -2,7 +2,7 @@ import React from 'react';
 
 const YoutubeHistory = (props) => {
   return (
-    <div className='history-youtube-test'>
+    <div className='history-youtube-container'>
       <iframe
         className="history-youtube-iframe"
         width="853"
