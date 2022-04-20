@@ -1,0 +1,61 @@
+// main page : 1ere partie sous la navbar
+  
+.club {
+  display: block;
+  background-color: #0A0A1E;
+  text-align: center;
+  justify-content: space-between;
+  min-height: 13.125rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1.875rem;
+  // background-image: url(./components/img/bg-home-blue.jpg);
+  object-fit: cover;
+  background-size: 120vw 120vh;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .club-cards {
+    @include flex-wrap(nowrap, center, center);
+    flex-direction: column;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 0.2rem;
+    @include media(desktop) {
+      flex-direction: row;
+      gap: 1.125rem;
+    }
+  }
+
+  .evenements {
+    border: 0.125rem double #BA9100;
+    border-radius: 0.75rem;
+    padding: 0.9rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    color: #BA9100;
+    transition: 0.2s ease;
+    @include flex-wrap(nowrap, center, center);
+    @include media(desktop) {
+      width: 25rem;
+      height: 7.5rem;
+      margin-top: 0.625rem;
+      margin-bottom: 0.625rem;
+    }
+    &:hover {
+      transform: scale(101%);
+    }
+  }
+}
+
+// .img {
+//   object-fit: cover;
+//   object-position: center;
+// }
+
