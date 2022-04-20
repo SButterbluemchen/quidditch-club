@@ -19,16 +19,20 @@ export default function Navbar() {
 
   const items = [
     {
-      label:'Informations'
+      label:'Informations',
+      url: '/informations'
     },
     {
       label:'Joueurs',
+      url: '/players'
     },
     {
       label:'Histoire',
+      url: '/history'
     },
     {
       label:'Contact',
+      url: '/contact'
     },
   ];
 
