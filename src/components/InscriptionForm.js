@@ -2,7 +2,8 @@ import React, { useState} from 'react';
 
 const InscriptionForm = () => {
 
-  const [isChecked, setIsChecked] = useState(false);
+  const [catcherChecked, setCatcherChecked] = useState(false);
+  const [batterChecked, setBatterChecked] = useState(false);
 
   const [formData, setFormData] = useState(
     {
@@ -11,20 +12,24 @@ const InscriptionForm = () => {
       email: '',
       player: '',
       clubName: '',
-      position: {isChecked},
+      positions: [],
       message: ''
     }
   );
 
   function handleChange(event) {
-    const {value, name, checked, type} = event.target;
+    const {value, name, checked, type, id} = event.target;
     setFormData(prevFormData => {
       return {
         ...prevFormData,
-        [name]: type === 'checkbox' ? checked : value
+        [name]: value,
       };
     });
-    setIsChecked(!isChecked);
+    if (id === 'catcher') {
+      setCatcherChecked(!catcherChecked);
+    } else if (id === 'batter') {
+      setBatterChecked(!batterChecked);
+    }
   }
 
   function handleSubmit(event) {
@@ -73,10 +78,10 @@ const InscriptionForm = () => {
               <li>
                 <input 
                   type="checkbox"
-                  id="attrapeur"
-                  checked={isChecked}
+                  id="catcher"
+                  checked={catcherChecked}
                   name="positions"
-                  value="attrapeur"
+                  value={formData.positions === 'catcher'}
                   onChange={handleChange}
                 />
                 <label htmlFor="position">Attrapeur</label>
@@ -84,10 +89,10 @@ const InscriptionForm = () => {
               <li>
                 <input 
                   type="checkbox"
-                  id="batteur"
-                  checked={isChecked}
+                  id="batter"
+                  checked={batterChecked}
                   name="positions"
-                  value="batteur"
+                  value={formData.positions === 'batter'}
                   onChange={handleChange}
                 />
                 <label htmlFor="position">Batteur</label>
