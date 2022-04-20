@@ -3,13 +3,15 @@ import CardSection from './components/PlayerCards/PlayerCardSection';
 import React, {useEffect, useState} from 'react';
 import PageTopFrames from './components/Frames/pageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
+import { token } from './components/token';
 
 export default function Players() {
 
   const [isLoading, setIsLoading] = useState(true);
   const [playerGroups, setPlayerGroups] = useState([]);
+  const [allPlayers, setAllPlayers] = useState([]);
 
-  const token = '7fb39549098e45b77abd3789b342e43e15d50e2e1681ccc2a5a349cc3f168f2791ee3a327a9db867d9248ca4225f3ef92eb9a2554894b692c6b9842ac555bce9b2c70924a752605a7f09876df23df3aadf46a97c6012d0eb994bbe8600f456dd40ac152ec3073eed375bba4a6fe38391c846591e2d2a01171dc3f86fc48a5cdf';
+  const [query, setQuery] = useState('');
  
   useEffect(() => {
     const query = 'populate=%2A';
@@ -23,11 +25,26 @@ export default function Players() {
       })
       .then(response => response.json())
       .then(data => { 
-        const allPlayerGroups = getPlayerGroups(data.data);
-        setPlayerGroups(allPlayerGroups);
+        setAllPlayers(data.data);
         setIsLoading(false);
       });
   }, []);
+
+  useEffect(() => {
+    setAllPlayersGroups();
+  }, [allPlayers, query]);
+
+  function setAllPlayersGroups() {
+    const filteredPlayers = query.length > 0 ? allPlayers.filter(player => {
+      if (query !== '' && player.attributes.firstName.toLowerCase().includes(query.toLowerCase()) || player.attributes.lastName.toLowerCase().includes(query.toLowerCase()) || player.attributes.broom.toLowerCase().includes(query.toLowerCase())) { 
+        return player;
+      }
+    }
+    ) : allPlayers;
+
+    const allPlayerGroups = getPlayerGroups(filteredPlayers);
+    setPlayerGroups(allPlayerGroups);
+  }
 
   // Get data from API and group OBJECTS in 1 OBJECT by position - using 'groupBy' function from below
   function getPlayerGroups(players) {
@@ -80,15 +97,32 @@ export default function Players() {
     groupedPlayers.forEach((element, key) => {
       allPlayerGroups.push({ position: key, players: element });
     });
-    return allPlayerGroups;
+    return allPlayerGroups.sort((a,b) => {
+      let pa = a.position.toLowerCase(),
+        pb = b.position.toLowerCase();
+      if (pa < pb) {
+        return -1;
+      }
+      else if (pa > pb) {
+        return 1;
+      }
+      return 0;
+    });
   }
+
+  console.log(playerGroups);
 
   return (
     <section className="page-players">
       <Navbar />
       <PageTopFrames />
       <h2>Notre équipe de Quidditch</h2>
-      {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)};
+      <section className='searchbar-container'>
+        <div>
+          <input placeholder="Je cherche ..." onChange={event => setQuery(event.target.value)}/>
+        </div>
+      </section>
+      {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)}
       <PageBottomFrames />
     </section>
   );
