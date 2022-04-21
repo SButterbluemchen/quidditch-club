@@ -1,13 +1,10 @@
 // part map //
-
 .home-map {
   @include flex-wrap(wrap, space-evenly, center);
   flex-direction: column;
   text-align: center;
   column-gap: 2.5rem;
   padding: 1rem;
-  background: $secondary-color;
-  color: black;
   @include media(desktop) {
     flex-direction: row;
   }

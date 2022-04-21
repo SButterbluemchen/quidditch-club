@@ -6,6 +6,7 @@ import Players from './Players';
 import History from './History';
 import Informations from './Informations';
 import { Suspense } from 'react';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/informations" element={<Informations />} />
         <Route path="/players" element={<Players />} />
         <Route path="/history" element={<History />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

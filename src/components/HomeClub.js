@@ -6,16 +6,16 @@ export default function HomeClub() {
       <h1>Sélection de la Coupe des Maisons</h1>
       <section className="club-cards">
         <article className="evenements">
-          <h3>Vie du Club</h3>
+          <a href="informations#inscription-form"><h3>Vie du Club</h3></a>
         </article>
         <article className="evenements">
-          <h3>Evenements</h3>
+          <a href="#events"><h3>Evenements</h3></a>
         </article>
         <article className="evenements">
-          <h3>Membres</h3>
+          <a href="/players"><h3>Membres</h3></a>
         </article>
         <article className="evenements">
-          <h3>Contact</h3>
+          <a href="contact"><h3>Contact</h3></a>
         </article>
       </section>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Events() {
   return (
-    <div className="container">
+    <div className="container" id="events">
       <section>
         <article className="home-titles">
           <h2>Actualités du Club</h2>
