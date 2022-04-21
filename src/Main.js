@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import HomeClub from './components/HomeClub';
 import Newsletter from './components/Newsletter';
 import Presentation from './components/Presentation';
-// import Events from './components/Events';
+import Events from './components/Events';
 // import Donuts from './components/Donuts';
 // import HomeMap from './components/HomeMap';
 
@@ -17,7 +17,8 @@ function Main() {
       <HomeClub />
       <Newsletter />
       <Presentation />
-      {/* <Events />
+      <Events />
+      {/* 
       <Donuts />
       <HomeMap /> */}
     </div>
