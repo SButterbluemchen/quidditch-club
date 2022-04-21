@@ -39,14 +39,14 @@ const RankingTable = () => {
               <th>MJ</th>
               <th>MG</th>
               <th>MP</th>
-              <th>Point</th>
+              <th>Pt</th>
             </tr>
           </thead>
           <tbody>
             {rankingData.map(dataItem => <RankingColumn key={dataItem.id} rankingInfo={dataItem.attributes} />)}
           </tbody>
         </table>
-        <p className="rankingCaptions">*MJ: matchs joués, MG: matchs gagnés, MP: matchs perdus</p>
+        <p className="rankingCaptions">*MJ : matchs joués, MG : matchs gagnés, MP : matchs perdus, PT : points</p>
       </article>
     </>
   );

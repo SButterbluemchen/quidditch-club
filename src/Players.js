@@ -110,8 +110,6 @@ export default function Players() {
     });
   }
 
-  console.log(playerGroups);
-
   return (
     <section className="page-players">
       <Navbar />

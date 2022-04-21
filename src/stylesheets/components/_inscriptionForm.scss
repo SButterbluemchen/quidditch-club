@@ -1,15 +1,51 @@
 .inscription-form {
   border: 0.1rem solid $primary-color;
   padding: 2rem;
+  @include flex-wrap(wrap, center);
+  @include media(tablet) {
+    flex-direction: column;
+  }
+  div {
+    margin-top: 1rem; 
+  }
   fieldset {
     border: none;
   }
+  .position-list {
+    @include flex-wrap(wrap, flex-start);
+    padding-left: 0;
+    gap: 1rem;
+    li {
+      list-style-type: none;
+    }
+  }
   .main-inscription-infos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
     input {
-      width: 20rem;
+      width: 15rem;
+      margin-top: 0.2rem; 
+      height: 2rem;
+    }
+    textarea {
+      width: 15rem;
+      height: 8rem;
+      @include media(tablet) {
+        width: 50rem;
+      }
+    }
+  }
+  button {
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    background: $primary-color;
+    color: white;
+    border: none;
+    &:hover {
+      transform: scale(102%);
     }
   }
 }
