@@ -35,7 +35,7 @@ const InscriptionForm = () => {
   // console.log(formData);
 
   return (
-    <section className='container'>
+    <section className='container' id="inscription-form">
       <h2>Envie de nous rejoindre ?</h2>
       <form onSubmit={handleSubmit} className="inscription-form">
         <fieldset>

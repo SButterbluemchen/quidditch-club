@@ -1,0 +1,66 @@
+/* part newsletter */
+
+.abonnement {
+  background-color: $primary-color;
+  @include flex-wrap(nowrap, center, center);
+  flex-direction: column;
+  padding: 0.5em 2.5em;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+  .actunews {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    @include media(desktop) {
+      flex-direction: row;
+    }
+    p {
+      color: $tertiary-color;
+      @include headingstyle(normal, h4);
+    }
+  }
+}
+
+.newsletter-email {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  max-height: 4rem;
+  padding: 0.625rem;
+  color: #fff;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  input {
+    height: 1rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 0.1rem solid #fff;
+    border-radius: 12px;
+    background-color: $tertiary-color;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    box-sizing: border-box;
+  } 
+
+  .button-news {
+    margin: 0.625rem 0.8rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    padding: 0.625rem;
+    background-color: $tertiary-color;
+    border: none;
+    border-radius: 100%;
+    color: #FFFFFF;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(102%);
+    }
+  }
+}
