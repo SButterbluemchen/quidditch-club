@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import CardSection from './components/PlayerCards/PlayerCardSection';
 import React, {useEffect, useState} from 'react';
-import PageTopFrames from './components/Frames/pageTopFrames';
+import PageTopFrames from './components/Frames/PageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
 import { token } from './components/token';
 

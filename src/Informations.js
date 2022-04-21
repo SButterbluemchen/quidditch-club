@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import PageTopFrames from './components/Frames/pageTopFrames';
+import PageTopFrames from './components/Frames/PageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
 import Trainingplan from './components/Trainingsplan/Trainingplan';
 import ImageTextBlock from './components/ImageTextBlock';

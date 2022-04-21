@@ -1,6 +1,6 @@
 import React from 'react';
 
-const pageTopFrames = () => {
+const PageTopFrames = () => {
   return (
     <figure className="page-frames frame-top">
       <img src="/corner-left.webp" alt="frame" />
@@ -9,4 +9,4 @@ const pageTopFrames = () => {
   );
 };
 
-export default pageTopFrames;
+export default PageTopFrames;
