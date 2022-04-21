@@ -4,7 +4,7 @@ import './stylesheets/main.css';
 import Navbar from './components/Navbar';
 import HomeClub from './components/HomeClub';
 import Newsletter from './components/Newsletter';
-// import Presentation from './components/Presentation';
+import Presentation from './components/Presentation';
 // import Events from './components/Events';
 // import Donuts from './components/Donuts';
 // import HomeMap from './components/HomeMap';
@@ -16,8 +16,8 @@ function Main() {
       <Navbar />
       <HomeClub />
       <Newsletter />
-      {/* <Presentation />
-      <Events />
+      <Presentation />
+      {/* <Events />
       <Donuts />
       <HomeMap /> */}
     </div>

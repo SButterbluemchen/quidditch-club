@@ -1,0 +1,24 @@
+/* == PRESENTATION == */
+
+.presentation-container {
+  text-align: center;
+
+.welcome {
+    padding-top: 1.25rem;
+  }
+
+.presentation {
+    line-height: 1.3rem;
+    padding-bottom: 0.625rem;
+
+    .linkme {
+      color: $primary-color;
+      text-transform: uppercase;
+      font-weight: 600;
+      &:hover {
+        color: #937402;
+        cursor: pointer;
+      }
+    }
+  }
+}
