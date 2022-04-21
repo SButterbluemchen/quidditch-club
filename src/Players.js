@@ -111,7 +111,7 @@ export default function Players() {
   }
 
   return (
-    <section className="page-players">
+    <section className="page-background">
       <Navbar />
       <PageTopFrames />
       <h2>Notre équipe de Quidditch</h2>

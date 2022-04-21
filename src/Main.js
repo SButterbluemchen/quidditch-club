@@ -10,7 +10,7 @@ import Presentation from './components/Presentation';
 import Events from './components/Events';
 import Donuts from './components/Donuts';
 import HomeMap from './components/HomeMap';
-
+// import Footer from './components/Footer';
 
 function Main() {
   return (
@@ -24,6 +24,7 @@ function Main() {
       <Donuts />
       <HomeMap />
       <PageBottomFrames />
+      {/* <Footer /> */}
     </div>
   );
 }
