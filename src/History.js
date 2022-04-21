@@ -12,19 +12,31 @@ const History = () => {
     {
       name: 'Gryffindor',
       src: './outfits/gryffindor.jpg',
+      color: 'Rouge et or',
+      animal: 'Lion',
+      quality: 'Courage, Détermination'
     },
 
     {
       name: 'Hufflepuff',
       src: './outfits/hufflepuff.jpg',
+      color: 'Jaune et noir',
+      animal: 'Blaireau',
+      quality: 'Loyauté, Sincérité'
     },
     {
       name: 'Revenclaw',
-      src: './outfits/revenclaw.jpg'
+      src: './outfits/revenclaw.jpg',
+      color: 'Bleu et Bronze',
+      animal: 'Aigle',
+      quality: 'Intelligence, Sagesse'
     },
     {
       name: 'Slytheryn',
-      src: './outfits/slytherin.jpg'
+      src: './outfits/slytherin.jpg',
+      color: 'Vert et Argent',
+      animal: 'Serpent',
+      quality: 'Noblesse, Ruse'
     }
   ];
 
@@ -37,6 +49,7 @@ const History = () => {
     if (!selectedHouse) {
       return filteredData;
     }
+    //Va chercher house.name à partir des ''
     const filteredHouses = filteredData.filter((house) => house.name.split(' ').indexOf(selectedHouse) !== -1);
     return filteredHouses;
   };
@@ -147,6 +160,11 @@ const History = () => {
         {filteredList.map((item, index) => (
           <div className='house-item' key={index}>
             <img className='house-image' src={item.src} alt='image de maison Harry Potter'/>
+            <div className='house-card'>
+              <h5>Couleurs</h5> <p>{item.color}</p>
+              <h5>Animal</h5> <p>{item.animal}</p>
+              <h5>Caractéristiques</h5> <p>{item.quality}</p>
+            </div>
           </div>
         ))}
       </section>

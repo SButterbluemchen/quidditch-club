@@ -135,13 +135,18 @@
 }
 
 //OUTFITS
-
 .history-houses-filter {
+  padding-top: 1 rem;
   @include flex-wrap(wrap, center, center);
 }
 
 .history-houses-list {
   @include flex-wrap(wrap, center, center);
+}
+
+.house-item {
+  height: 32rem;
+
 }
 
 .house-image {
@@ -164,4 +169,35 @@
 #house-input {
   border: 1px solid $primary-color;
   text-align: center;
+}
+
+//OUTFITS : CARDS
+.house-card {
+  @include flex-wrap(nowrap, center);
+  flex-direction: column;
+  border: 1px solid rgba($primary-color, 0.7);
+  width: 15rem;
+  height: 17rem;
+  background-color: rgba($primary-color, 0.9);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  position: relative;
+  bottom: 18.75rem;
+  right: 2rem;
+
+  h5 {
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+  }
+
+  h5:not(:nth-child(4)) {
+    border-bottom: 1px solid $secondary-color;
+  }
+
+  p {
+    color: $tertiary-color;
+    font-weight: bold;
+    letter-spacing: 0.20rem;
+  }
 }

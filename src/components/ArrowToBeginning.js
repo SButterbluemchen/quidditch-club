@@ -4,7 +4,7 @@ const ArrowToBeginning = () => {
   return (
     <div className="allpages-arrow">
       <a href='#anchor-id'>
-        <img className="arrow-to-beggining" src="./goldvif.png" />
+        <img className="arrow-to-beginning" src="./goldvif.png" />
       </a>
     </div>
   );
