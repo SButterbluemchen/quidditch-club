@@ -1,0 +1,62 @@
+// part map //
+
+.home-map {
+  @include flex-wrap(wrap, space-evenly, center);
+  flex-direction: column;
+  text-align: center;
+  column-gap: 2.5rem;
+  padding: 1rem;
+  background: $secondary-color;
+  color: black;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+  iframe {
+    width: 21rem;
+    max-height: 17rem;
+    margin-top: 1rem;
+    @include media(desktop) {
+      width: 30rem;
+      max-height: 20rem;
+    }
+  }
+}
+
+.home-map-column {
+  max-width: 21.875rem;
+  line-height: 1.2rem;
+  margin: auto;
+}
+
+.home-map-list {
+  font-weight: 500;
+  color: #7c6101;
+  line-height: 1.2rem;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.home-map-alinea {
+  font-weight: 600;
+}
+
+.home-map-subtitles {
+  color: #7c6101;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+@media (max-width: 900px) {
+
+  .home-map-column, .home-map-list {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    justify-content: center;
+    text-align: center;
+    max-width: 29.375rem;
+  }
+}

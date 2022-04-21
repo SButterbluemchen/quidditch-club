@@ -9,7 +9,7 @@ import Newsletter from './components/Newsletter';
 import Presentation from './components/Presentation';
 import Events from './components/Events';
 import Donuts from './components/Donuts';
-// import HomeMap from './components/HomeMap';
+import HomeMap from './components/HomeMap';
 
 
 function Main() {
@@ -22,8 +22,7 @@ function Main() {
       <Presentation />
       <Events />
       <Donuts />
-      {/* 
-      <HomeMap /> */}
+      <HomeMap />
       <PageBottomFrames />
     </div>
   );
