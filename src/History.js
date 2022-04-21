@@ -25,7 +25,7 @@ const History = () => {
       quality: 'Loyauté, Sincérité'
     },
     {
-      name: 'Revenclaw',
+      name: 'Ravenclaw',
       src: './outfits/revenclaw.jpg',
       color: 'Bleu et Bronze',
       animal: 'Aigle',
@@ -64,9 +64,8 @@ const History = () => {
   }, [selectedHouse]);
 
   return (
-    <>
+    <section className='page-background'>
       <Navbar />
-      <div id='anchor-id'></div>
       <Timeline />
       <ArrowToBeginning />
       <BroomTitle title="Démonstration du Quidditch" />
@@ -148,12 +147,11 @@ const History = () => {
               <option value=''>Toutes les maisons</option>
               <option value='Gryffindor'>Gryffindor</option>
               <option value='Hufflepuff'>Hufflepuff</option>
-              <option value='Revenclaw'>Revenclaw</option>
+              <option value='Ravenclaw'>Ravenclaw</option>
               <option value='Slytheryn'>Slytheryn</option>
             </select>
           </div>
         </div>
-
       </section>
 
       <section className='history-houses-list'>
@@ -169,7 +167,7 @@ const History = () => {
         ))}
       </section>
       <ArrowToBeginning />
-    </>
+    </section>
   );
 };
 

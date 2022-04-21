@@ -17,6 +17,7 @@
 
 //History img animation
 .history-img-harry {
+  width: 20rem;
   transform: translatey(0);
   animation: float 5s ease-in-out infinite;
   @keyframes float {
@@ -55,11 +56,11 @@
 
 //History bubble
 .history-bubble {
-  width: 25rem;
-  @include media(mobile) {
-    width: 10rem;
-    display: flex;
-    align-items: center;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  @include media(desktop) {
+    width: 18rem;
   }
 }
 
@@ -69,10 +70,10 @@
   //mix-blend-mode: multiply;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 0.188rem;
+  letter-spacing: 0.1rem;
   color: $color-brown;
   background-color: $secondary-color;
-  padding: 3.125rem;
+  padding: 1.5rem;
   border-radius: 0.688rem;
   position: relative;
   box-shadow: 1.25rem 1.25rem rgba($primary-color, 0.7);

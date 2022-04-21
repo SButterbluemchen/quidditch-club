@@ -2,6 +2,7 @@
 background-image: url('/public/hogwarts-background.webp');
 background-size: 100vw 100vh;
 position: relative;
+background-repeat: no-repeat;
 }
 
 .timeline-title {
@@ -9,8 +10,9 @@ position: relative;
   color: $tertiary-color;
 }
 
-.timeline-date-color {
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
   color: $primary-color;
+  font-size: 1.4rem !important;
 }
 
 .vertical-timeline--two-columns .vertical-timeline-element-content{
