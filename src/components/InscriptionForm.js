@@ -1,17 +1,6 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 
 const InscriptionForm = () => {
-
-  const [catcherChecked, setCatcherChecked] = useState(false);
-  const [batterChecked, setBatterChecked] = useState(false);
-
-  const handleCatcherChange = () => {
-    setCatcherChecked(!catcherChecked);
-  };
-
-  const handleBatterChange = () => {
-    setBatterChecked(!batterChecked);
-  };
 
   const [formData, setFormData] = useState(
     {
@@ -20,13 +9,16 @@ const InscriptionForm = () => {
       email: '',
       player: '',
       clubName: '',
-      positions: [],
+      seeker: false,
+      beater: false,
+      chaser: false,
+      keeper: false,
       message: ''
     }
   );
 
   function handleChange(event) {
-    const {value, name, checked, type} = event.target;
+    const {value, name, type, checked} = event.target;
     setFormData(prevFormData => {
       return {
         ...prevFormData,
@@ -81,45 +73,43 @@ const InscriptionForm = () => {
               <li>
                 <input 
                   type="checkbox"
-                  id="catcher"
-                  value={catcherChecked}
-                  name="positions"
-                  checked={formData.positions.push('catcher')}
-                  onChange={handleCatcherChange}
+                  id="seeker"
+                  name="seeker"
+                  checked={formData.seeker}
+                  onChange={handleChange}
                 />
-                <label htmlFor="position">Attrapeur</label>
+                <label htmlFor="seeker">Attrapeur</label>
               </li>
               <li>
                 <input 
                   type="checkbox"
-                  id="batter"
-                  value={batterChecked}
-                  name="positions"
-                  checked={formData.positions.push('batter')}
-                  onChange={handleBatterChange}
-                />
-                <label htmlFor="position">Batteur</label>
-              </li>
-              {/* <li>
-                <input 
-                  type="checkbox"
-                  id="poursuiveur"
-                  checked={formData.position === 'poursuiveur'}
-                  name="position"
+                  id="beater"
+                  name="beater"
+                  checked={formData.beater}
                   onChange={handleChange}
                 />
-                <label htmlFor="position">Poursuiveur</label>
+                <label htmlFor="beater">Batteur</label>
               </li>
               <li>
                 <input 
                   type="checkbox"
-                  id="gardien"
-                  checked={formData.position === 'gardien'}
-                  name="position"
+                  id="chaser"
+                  name="chaser"
+                  checked={formData.chaser}
                   onChange={handleChange}
                 />
-                <label htmlFor="position">Gardien</label>
-              </li> */}
+                <label htmlFor="chaser">Poursuiveur</label>
+              </li>
+              <li>
+                <input 
+                  type="checkbox"
+                  id="keeper"
+                  name="keeper"
+                  checked={formData.keeper}
+                  onChange={handleChange}
+                />
+                <label htmlFor="keeper">Gardien</label>
+              </li>
             </ul>
           </div>
           }
@@ -130,8 +120,8 @@ const InscriptionForm = () => {
               type="text"
               name="firstName"
               placeholder="Prénom"
-              onChange={handleChange}
               value={formData.firstName}
+              onChange={handleChange}
               required={true}
             />
             <input
