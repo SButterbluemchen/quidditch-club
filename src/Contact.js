@@ -5,6 +5,7 @@ import PageBottomFrames from './components/Frames/PageBottomFrames';
 import HomeMap from './components/HomeMap';
 import InscriptionForm from './components/InscriptionForm';
 import ArrowToBeginning from './components/ArrowToBeginning';
+import ScrollButton from './components/ScrollButton';
 
 const Contact = () => {
   return (
@@ -14,6 +15,7 @@ const Contact = () => {
       <HomeMap />
       <ArrowToBeginning />
       <InscriptionForm />
+      <ScrollButton />
       <PageBottomFrames />
     </div>
   );
