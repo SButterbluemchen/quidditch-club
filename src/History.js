@@ -7,6 +7,8 @@ import YoutubeHistory from './components/YoutubeHistory';
 import ArrowToBeginning from './components/ArrowToBeginning';
 import PageTopFrames from './components/Frames/PageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
+import Footer from './components/Footer';
+import ScrollButton from './components/ScrollButton';
 
 const History = () => {
 
@@ -169,8 +171,9 @@ const History = () => {
           </div>
         ))}
       </section>
-      <ArrowToBeginning />
+      <ScrollButton />
       <PageBottomFrames />
+      <Footer />
     </section>
   );
 };

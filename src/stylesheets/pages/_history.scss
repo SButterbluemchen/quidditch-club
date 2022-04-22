@@ -152,7 +152,10 @@
 }
 
 .house-item {
+  height: 15rem;
+  @include media(desktop) {
   height: 32rem;
+}
 }
 
 .house-image {
