@@ -11,6 +11,7 @@ import Presentation from './components/Presentation';
 import Events from './components/Events';
 import Donuts from './components/Donuts';
 import HomeMap from './components/HomeMap';
+import ScrollButton from './components/ScrollButton';
 // import Footer from './components/Footer';
 
 function Main() {
@@ -27,6 +28,7 @@ function Main() {
       <Donuts />
       <ArrowToBeginning />
       <HomeMap />
+      <ScrollButton />
       <PageBottomFrames />
       {/* <Footer /> */}
     </div>

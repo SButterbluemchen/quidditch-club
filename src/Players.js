@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react';
 import PageTopFrames from './components/Frames/PageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
 import { token } from './components/token';
+import ScrollButton from './components/ScrollButton';
 
 export default function Players() {
 
@@ -121,6 +122,7 @@ export default function Players() {
         </div>
       </section>
       {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)}
+      <ScrollButton />
       <PageBottomFrames />
     </section>
   );

@@ -7,6 +7,7 @@ import ImageTextBlock from './components/ImageTextBlock';
 import RankingTable from './components/Ranking/RankingTable';
 import InscriptionForm from './components/InscriptionForm';
 import ArrowToBeginning from './components/ArrowToBeginning';
+import ScrollButton from './components/ScrollButton';
 
 const Informations = () => {
   return (
@@ -21,6 +22,7 @@ const Informations = () => {
       <ImageTextBlock articleClassName="right" image="/stadium.jpeg" title="Une pelouse de qualité pour plus de succès"/>
       <ArrowToBeginning />
       <InscriptionForm />
+      <ScrollButton />
       <PageBottomFrames />
     </section>
   );
