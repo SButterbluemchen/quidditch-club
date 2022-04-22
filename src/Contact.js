@@ -4,6 +4,7 @@ import PageTopFrames from './components/Frames/PageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
 import HomeMap from './components/HomeMap';
 import InscriptionForm from './components/InscriptionForm';
+import ArrowToBeginning from './components/ArrowToBeginning';
 
 const Contact = () => {
   return (
@@ -11,6 +12,7 @@ const Contact = () => {
       <Navbar />
       <PageTopFrames />
       <HomeMap />
+      <ArrowToBeginning />
       <InscriptionForm />
       <PageBottomFrames />
     </div>

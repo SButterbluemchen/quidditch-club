@@ -2,6 +2,7 @@ import React from 'react';
 import './stylesheets/main.css'; 
 
 import PageTopFrames from './components/Frames/PageTopFrames';
+import ArrowToBeginning from './components/ArrowToBeginning';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
 import Navbar from './components/Navbar';
 import HomeClub from './components/HomeClub';
@@ -20,8 +21,11 @@ function Main() {
       <HomeClub />
       <Newsletter />
       <Presentation />
+      <ArrowToBeginning />
       <Events />
+      <ArrowToBeginning />
       <Donuts />
+      <ArrowToBeginning />
       <HomeMap />
       <PageBottomFrames />
       {/* <Footer /> */}
