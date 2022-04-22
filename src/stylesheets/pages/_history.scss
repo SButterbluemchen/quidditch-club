@@ -79,7 +79,7 @@
   box-shadow: 1.25rem 1.25rem rgba($primary-color, 0.7);
 }
 //Bottom of the bubble
-.history-rulescard-section :after {
+.history-rulescard-section ::after {
   transform: translatey(0);
   animation: float2 5s ease-in-out infinite;
   content: ".";

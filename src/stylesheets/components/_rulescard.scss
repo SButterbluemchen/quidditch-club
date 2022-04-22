@@ -2,6 +2,9 @@
 .history-rulescard-section {
   display: flex;
   justify-content: center;
+  @include media(desktopXL) {
+    justify-content: space-around;
+  }
   }
 
 //Colonne numéro 2 avec cartes en "miroir"
@@ -34,10 +37,10 @@
 }
 
 .rulescard-description {
-  color: $primary-color;
-  width: 20rem;
-  @include media(mobile) {
-    width: 10rem
+  width: 10rem;
+  @include media(desktop) {
+    color: $primary-color;
+    width: 20rem;
   }
 }
 
