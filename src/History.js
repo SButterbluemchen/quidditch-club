@@ -1,28 +1,82 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Timeline from './components/Timeline';
 import Navbar from './components/Navbar';
 import Rulescard from './components/Rulescard';
 import BroomTitle from './components/BroomTitle';
 import YoutubeHistory from './components/YoutubeHistory';
+import ArrowToBeginning from './components/ArrowToBeginning';
 
 const History = () => {
+
+  const housesList = [
+    {
+      name: 'Gryffindor',
+      src: './outfits/gryffindor.jpg',
+      color: 'Rouge et or',
+      animal: 'Lion',
+      quality: 'Courage, Détermination'
+    },
+
+    {
+      name: 'Hufflepuff',
+      src: './outfits/hufflepuff.jpg',
+      color: 'Jaune et noir',
+      animal: 'Blaireau',
+      quality: 'Loyauté, Sincérité'
+    },
+    {
+      name: 'Ravenclaw',
+      src: './outfits/revenclaw.jpg',
+      color: 'Bleu et Bronze',
+      animal: 'Aigle',
+      quality: 'Intelligence, Sagesse'
+    },
+    {
+      name: 'Slytheryn',
+      src: './outfits/slytherin.jpg',
+      color: 'Vert et Argent',
+      animal: 'Serpent',
+      quality: 'Noblesse, Ruse'
+    }
+  ];
+
+  //Filtre
+  const [filteredList, setFilteredList] = useState(housesList);
+  //Maisons Hogwarts
+  const [selectedHouse, setSelectedHouse] = useState('');
+
+  const filterByHouse = (filteredData) => {
+    if (!selectedHouse) {
+      return filteredData;
+    }
+    //Va chercher house.name à partir des ''
+    const filteredHouses = filteredData.filter((house) => house.name.split(' ').indexOf(selectedHouse) !== -1);
+    return filteredHouses;
+  };
+
+  const handleHouseChange = (e) => {
+    setSelectedHouse(e.target.value);
+  };
+
+  useEffect(() => {
+    let filteredData = filterByHouse(housesList);
+    setFilteredList(filteredData);
+  }, [selectedHouse]);
+
   return (
-    <>
-      <Navbar/>
-      <Timeline/>
-      <BroomTitle
-        title="Démonstration du Quidditch"
-      />
-      <section className='history-youtube-section'>
-        <YoutubeHistory
-          src='https://www.youtube.com/embed/C0cfigo8iKM'
-        />
+    <section className='page-background'>
+      <Navbar />
+      <Timeline />
+      <ArrowToBeginning />
+      <BroomTitle title="Démonstration du Quidditch" />
+      <section className="history-youtube-section">
+        <YoutubeHistory src="https://www.youtube.com/embed/C0cfigo8iKM" />
       </section>
-      <BroomTitle
-        title="Les règles du Quidditch"
-      />
-      <section className='history-rulescard-section'>
-        <div className='history-rulescard-section-group1'>
+      <ArrowToBeginning />
+
+      <BroomTitle title="Les règles du Quidditch" />
+      <section className="history-rulescard-section">
+        <div className="history-rulescard-section-group1">
           <Rulescard
             img="./rules/green-headband.png"
             description="Un·e gardien·ne par équipe porte un bandeau et mène le jeu du souafle"
@@ -41,16 +95,29 @@ const History = () => {
           />
         </div>
 
-        <section className='history-section-middle'>
-          <div className='history-bubble'>
-            <p>Tous les joueur·euses sur le terrain sont soumis·es à la même règle des genres, ou règles des 4 maximum :<br/>Pas plus de 4 personnes du même genre par équipe en même temps sur le terrain. Cette règle est primordiale pour assurer que le Quidditch reste mixte et inclusif</p>
+        <section className="history-section-middle">
+          <div className="history-bubble">
+            <p>
+              Tous les joueur·euses sur le terrain sont soumis·es à la même
+              règle des genres, ou règles des 4 maximum :<br />
+              Pas plus de 4 personnes du même genre par équipe en même temps sur
+              le terrain. Cette règle est primordiale pour assurer que le
+              Quidditch reste mixte et inclusif
+            </p>
           </div>
-          <a href='https://drive.google.com/file/d/1BJGoErZ94y9bGcMMcZDv8GdHXP8vHwH0/view' target={'blank'}>
-            <img className='history-img-harry' src="./rules/harry-quidditch.png" alt="Harry Potter sur son balai" />
+          <a
+            href="https://drive.google.com/file/d/1BJGoErZ94y9bGcMMcZDv8GdHXP8vHwH0/view"
+            target={'blank'}
+          >
+            <img
+              className="history-img-harry"
+              src="./rules/harry-quidditch.png"
+              alt="Harry Potter sur son balai"
+            />
           </a>
         </section>
 
-        <div className='history-rulescard-section-group2'>
+        <div className="history-rulescard-section-group2">
           <Rulescard
             img="./rules/souafle.png"
             description="Le souafle est une balle de volley utilisée pour marquer des buts à travers les anneaux adverses. Chaque but marqué vaut 10 points"
@@ -65,7 +132,42 @@ const History = () => {
           />
         </div>
       </section>
-    </>
+      <ArrowToBeginning />
+
+      <BroomTitle title="Les tenues de Quidditch" />
+      <section>
+        <div className='history-houses-filter'>
+          <div className='history-house-filter-text'>
+            <p className='history-p'>Choisis ta maison préférée :</p>
+            <select
+              id='house-input'
+              value={selectedHouse}
+              onChange={handleHouseChange}
+            >
+              <option value=''>Toutes les maisons</option>
+              <option value='Gryffindor'>Gryffindor</option>
+              <option value='Hufflepuff'>Hufflepuff</option>
+              <option value='Ravenclaw'>Ravenclaw</option>
+              <option value='Slytheryn'>Slytheryn</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section className='history-houses-list'>
+        {filteredList.map((item, index) => (
+          <div className='house-item' key={index}>
+            <img className='house-image' src={item.src} alt='image de maison Harry Potter'/>
+            <div className='house-card'>
+              <h5>Couleurs</h5> <p>{item.color}</p>
+              <h5>Animal</h5> <p>{item.animal}</p>
+              <h5>Caractéristiques</h5> <p>{item.quality}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+      <ArrowToBeginning />
+    </section>
   );
 };
 
