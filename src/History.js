@@ -5,6 +5,8 @@ import Rulescard from './components/Rulescard';
 import BroomTitle from './components/BroomTitle';
 import YoutubeHistory from './components/YoutubeHistory';
 import ArrowToBeginning from './components/ArrowToBeginning';
+import PageTopFrames from './components/Frames/PageTopFrames';
+import PageBottomFrames from './components/Frames/PageBottomFrames';
 
 const History = () => {
 
@@ -66,6 +68,7 @@ const History = () => {
   return (
     <section className='page-background'>
       <Navbar />
+      <PageTopFrames/>
       <Timeline />
       <ArrowToBeginning />
       <BroomTitle title="Démonstration du Quidditch" />
@@ -167,6 +170,7 @@ const History = () => {
         ))}
       </section>
       <ArrowToBeginning />
+      <PageBottomFrames />
     </section>
   );
 };

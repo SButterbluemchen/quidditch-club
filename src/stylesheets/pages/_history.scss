@@ -1,25 +1,26 @@
-//History middle section
-.history-section-middle {
-  @include flex-wrap(wrap, center, center);
-  flex-direction: column;
-}
-//History img
-.history-img-harry {
-  display: flex;
-  flex-direction: column;
-}
-.history-img-harry:hover {
-  cursor: pointer;
-  content: "Clique pour en savoir plus !";
-  filter: drop-shadow(0 0 0.75rem $secondary-color);
+/* //History middle section
+.history-section-middle
+  border: 2px solid red;
+ // @include flex-wrap(wrap, center, center);
+ // flex-direction: column;
+ // @include media(desktop)
 
-}
+ //
+ */
+
+
 
 //History img animation
 .history-img-harry {
+  display: flex;
+  flex-direction: column;
   width: 20rem;
   transform: translatey(0);
   animation: float 5s ease-in-out infinite;
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem $secondary-color);
+  }
   @keyframes float {
     0% {
       transform: translatey(0);
@@ -54,9 +55,10 @@
   }
 }
 
+
 //History bubble
 .history-bubble {
-  width: 10rem;
+  width: 20rem;
   display: flex;
   align-items: center;
   @include media(desktop) {
@@ -77,9 +79,13 @@
   border-radius: 0.688rem;
   position: relative;
   box-shadow: 1.25rem 1.25rem rgba($primary-color, 0.7);
+  /* @include media(desktop) {
+
+  } */
 }
+
 //Bottom of the bubble
-.history-rulescard-section :after {
+.history-rulescard-section ::after {
   transform: translatey(0);
   animation: float2 5s ease-in-out infinite;
   content: ".";
@@ -147,14 +153,17 @@
 
 .house-item {
   height: 32rem;
-
 }
 
 .house-image {
-  width: 50rem;
+  width: 22rem;
   border: 0.1rem double $primary-color;
   border-radius: 0.5rem;
   margin: 1rem;
+  padding: 0.3rem;
+  @include media(desktop) {
+  width: 50rem;
+  }
 }
 
 .history-house-filter-text {
@@ -174,31 +183,50 @@
 
 //OUTFITS : CARDS
 .house-card {
+  //Les cards n'apparaissent pas en version mobile
+  display: none;
+  @include media(desktop) {
   @include flex-wrap(nowrap, center);
   flex-direction: column;
   border: 1px solid rgba($primary-color, 0.7);
-  width: 15rem;
-  height: 17rem;
   background-color: rgba($primary-color, 0.9);
   padding: 2rem;
   border-radius: 0.5rem;
   position: relative;
+  width: 15rem;
+  height: 17rem;
   bottom: 18.75rem;
   right: 2rem;
+  }
+}
 
-  h5 {
+  .house-card h5 {
+    @include media(desktop) {
     color: black;
+    font-size: 0.75rem;
+    margin: 0.3rem;
+    text-align: center;
+    margin: 0.75rem;
     font-size: 1rem;
     letter-spacing: 0.15rem;
+    }
+  }
+
+  .house-card p {
+    @include media(desktop) {
+    font-weight: bold;
+    color: $tertiary-color;
+    font-size: smaller;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.20rem;
+    margin: 0.25rem;
+    line-height: 1.25rem;
+    }
   }
 
   h5:not(:nth-child(4)) {
+    @include media(desktop) {
     border-bottom: 1px solid $secondary-color;
-  }
-
-  p {
-    color: $tertiary-color;
-    font-weight: bold;
-    letter-spacing: 0.20rem;
   }
 }

@@ -1,7 +1,18 @@
 //Disposition en 2 colonnes
 .history-rulescard-section {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media(desktop) {
   justify-content: center;
+  flex-direction: row;
+  }
+  @include media(desktopXL) {
+  justify-content: space-around;
+  }
+  @include media(tv) {
+  justify-content: space-around;
+  }
   }
 
 //Colonne numéro 2 avec cartes en "miroir"
@@ -11,8 +22,11 @@
 
 //Style des cartes
 .rulescard-card {
-  padding: 5rem;
-  @include flex-wrap(wrap, flex-start, center);
+@include flex-wrap(wrap, flex-start, center);
+padding: 2rem ;
+@include media(desktop) {
+padding: 4rem;
+}
 }
 
 .rulescard-body {
@@ -34,16 +48,16 @@
 }
 
 .rulescard-description {
+  width: 10rem;
+  @include media(desktop) {
   color: $primary-color;
   width: 20rem;
-  @include media(mobile) {
-    width: 10rem
   }
 }
 
 .history-rulescard-section-group2 .rulescard-description {
+  width: 20rem;
+  @include media(desktop) {
   width: 25rem;
-  @include media(mobile) {
-    width: 20rem
   }
 }
