@@ -1,6 +1,5 @@
 .ranking-column {
-  width: 95%;
-  margin: auto;
+  @include flex-wrap(wrap, center);
   table {
     border-collapse: collapse;
     text-align: left;
@@ -24,7 +23,10 @@
   .rankingCaptions {
     @include headingstyle(semi-light, small);
     padding-top: 0.5rem;
-    max-width: 80%;
-    margin: auto;
+    padding-left: 2%;
+    margin-right: auto;
+    @include media(tv) {
+      padding-left: 17rem;
+    }
   }
 }
