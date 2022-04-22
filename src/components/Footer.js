@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-import LogoQuidditchGold from './img/logo-quidditch-gold.png';
+import { Link } from 'react-icons';
+import { LogoQuidditchGold } from './logo-quidditch-gold.png';
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { GiOwl } from 'react-icons/gi';
@@ -18,13 +18,12 @@ export default function Footer() {
       <div className="footer-container">
         <section className="footer-columns">
           <article className="footer-columns-model">
-            <Link
+            <figure
                 width="35%"
                 height="35%"
                 src={LogoQuidditchGold}
-                frameborder="0"
-                padding="0"
-            ></Link>
+                frameborder="0">
+            </figure>
             <h3 className="footer-titles">QUIDDITCH CLUB</h3>
             <article className="footer-texte">
                 Nous accueillons les enfants "sorciers" et "moldus" à suivre des cours de Quidditch. 
@@ -38,8 +37,8 @@ export default function Footer() {
                 <ul className="footer-li">
                     <li>Histoire</li>
                     <li>Horaires et visites</li>
-                    <li>Conditions d admission</li>
-                    <li>Formulaire d inscription</li>
+                    <li>Conditions d'&apos;admission</li>
+                    <li>Formulaire d'&apos;inscription</li>
                 </ul>
             </article>
           </article>
