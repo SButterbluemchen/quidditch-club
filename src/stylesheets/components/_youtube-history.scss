@@ -1,7 +1,15 @@
+
 .history-youtube-container {
   @include flex-wrap(wrap, center, center);
 }
 
 .history-youtube-iframe {
+  @include media(mobile) {
   border: 0.1rem double $primary-color;
+  width: auto;
+  height: auto;
+  }
+  @include media(desktop) {
+  border: 0.1rem double $primary-color;
+  }
 }
