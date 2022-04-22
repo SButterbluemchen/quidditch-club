@@ -2,9 +2,14 @@
   
 .club {
   text-align: center;
-  height: 70vh;
+  height: 80vh;
   @include media(desktop) {
     padding: 2rem;
+    height: 70vh;
+  }
+  @include media(tv) {
+    padding: 4rem;
+    height: 75vh;
   }
   .club-cards {
     @include flex-wrap(nowrap, center, center);

@@ -3,28 +3,35 @@
 // -----------------------------------------------------------------------------
 .top-button-container {
   position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  z-index: 100;
   @include media(tablet) {
     bottom: 6rem;
     right: 3rem;
   }
-  bottom: 2rem;
-  right: 1rem;
-  z-index: 100;
   .top-button {
     border: 0.1rem solid $primary-color;
     border-radius: 100%;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background: $tertiary-color;
     @include flex-wrap(nowrap, center, center);
+    @include media(tablet) {
+      width: 4rem;
+      height: 4rem;
+    }
     .up-arrow {
       bottom: 1px;
       position: absolute;
     }
     img {
-      width: 2.5rem;
+      width: 3rem;
       animation: MoveUpDown 1s linear infinite;
       position: absolute;
+      @include media(tablet) {
+        width: 3.5rem;
+      }
     }
   }
 }

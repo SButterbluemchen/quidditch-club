@@ -19,7 +19,7 @@ const Informations = () => {
       <ArrowToBeginning />
       <RankingTable />
       <ArrowToBeginning />
-      <ImageTextBlock sectionTitle="Bienvenu dans notre stade" image="/stadium2.jpeg" title="Un stade au coeur de Poudlard" />
+      <ImageTextBlock sectionTitle="Bienvenue dans notre stade" image="/stadium2.jpeg" title="Un stade au coeur de Poudlard" />
       <ImageTextBlock articleClassName="right" image="/stadium.jpeg" title="Une pelouse de qualité pour plus de succès"/>
       <ArrowToBeginning />
       <InscriptionForm />
