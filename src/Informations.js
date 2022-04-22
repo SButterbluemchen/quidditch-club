@@ -8,6 +8,7 @@ import RankingTable from './components/Ranking/RankingTable';
 import InscriptionForm from './components/InscriptionForm';
 import ArrowToBeginning from './components/ArrowToBeginning';
 import ScrollButton from './components/ScrollButton';
+import Footer from './components/Footer';
 
 const Informations = () => {
   return (
@@ -24,6 +25,7 @@ const Informations = () => {
       <InscriptionForm />
       <ScrollButton />
       <PageBottomFrames />
+      <Footer />
     </section>
   );
 };

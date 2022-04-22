@@ -12,11 +12,11 @@ import Events from './components/Events';
 import Donuts from './components/Donuts';
 import HomeMap from './components/HomeMap';
 import ScrollButton from './components/ScrollButton';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 function Main() {
   return (
-    <div className="Main">
+    <div className="Main page-background">
       <Navbar />
       <PageTopFrames />
       <HomeClub />
@@ -30,7 +30,7 @@ function Main() {
       <HomeMap />
       <ScrollButton />
       <PageBottomFrames />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
