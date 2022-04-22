@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 
 function Main() {
   return (
-    <div className="Main">
+    <div className="Main page-background">
       <Navbar />
       <PageTopFrames />
       <HomeClub />
