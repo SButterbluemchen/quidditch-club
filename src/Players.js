@@ -5,6 +5,7 @@ import PageTopFrames from './components/Frames/PageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
 import { token } from './components/token';
 import ScrollButton from './components/ScrollButton';
+import Footer from './components/Footer';
 
 export default function Players() {
 
@@ -124,6 +125,7 @@ export default function Players() {
       {isLoading ? 'Loading...' : playerGroups.map(playerGroup => <CardSection key={playerGroup.position} position={playerGroup.position} players={playerGroup.players}/>)}
       <ScrollButton />
       <PageBottomFrames />
+      <Footer />
     </section>
   );
 }

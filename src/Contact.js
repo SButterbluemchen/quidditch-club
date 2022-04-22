@@ -6,6 +6,7 @@ import HomeMap from './components/HomeMap';
 import InscriptionForm from './components/InscriptionForm';
 import ArrowToBeginning from './components/ArrowToBeginning';
 import ScrollButton from './components/ScrollButton';
+import Footer from './components/Footer';
 
 const Contact = () => {
   return (
@@ -17,6 +18,7 @@ const Contact = () => {
       <InscriptionForm />
       <ScrollButton />
       <PageBottomFrames />
+      <Footer />
     </div>
   );
 };
