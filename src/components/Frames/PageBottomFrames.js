@@ -1,6 +1,6 @@
 import React from 'react';
 
-const pageBottomFrames = () => {
+const PageBottomFrames = () => {
   return (
     <figure className="page-frames frame-bottom">
       <img src="/corner-bottom-left.webp" alt="frame" />
@@ -9,4 +9,4 @@ const pageBottomFrames = () => {
   );
 };
 
-export default pageBottomFrames;
+export default PageBottomFrames;
