@@ -69,7 +69,7 @@ export default function Footer() {
             <h3 className="footer-titles"><IoIosMegaphone />Nous contacter</h3>
             <article className="footer-texte">
                 <ul className="footer-li">
-                    <li><GiOwl />Err'Owl mail Ltd</li>
+                    <li><GiOwl />Err'&apos;Owl mail Ltd</li>
                     <li><SiTinyletter />Beuglante Corp.</li>
                 </ul>
             </article>
