@@ -3,7 +3,7 @@ import CardSection from './components/PlayerCards/PlayerCardSection';
 import React, {useEffect, useState} from 'react';
 import PageTopFrames from './components/Frames/PageTopFrames';
 import PageBottomFrames from './components/Frames/PageBottomFrames';
-// import { token } from './components/token';
+import { token } from './components/token';
 import ScrollButton from './components/ScrollButton';
 import Footer from './components/Footer';
 
@@ -16,31 +16,14 @@ export default function Players() {
   const [query, setQuery] = useState('');
  
   // Real FETCH to private API
-  // useEffect(() => {
-  //   const query = 'populate=%2A';
-  //   fetch(`http://localhost:1337/api/players?${query}`,
-  //     {
-  //       method: 'GET',
-  //       headers: {
-  //         'Accept': 'Application/json',
-  //         'Authorization': `Bearer ${token}`
-  //       }
-  //     })
-  //     .then(response => response.json())
-  //     .then(data => { 
-  //       setAllPlayers(data.data);
-  //       setIsLoading(false);
-  //     });
-  // }, []);
-
   useEffect(() => {
-    // const query = 'populate=%2A';
-    fetch('playerData.json',
+    const query = 'populate=%2A';
+    fetch(`http://localhost:1337/api/players?${query}`,
       {
         method: 'GET',
         headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          'Accept': 'Application/json',
+          'Authorization': `Bearer ${token}`
         }
       })
       .then(response => response.json())
@@ -49,6 +32,23 @@ export default function Players() {
         setIsLoading(false);
       });
   }, []);
+
+  //Local data fetch
+  // useEffect(() => {
+  //   fetch('playerData.json',
+  //     {
+  //       method: 'GET',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //         'Accept': 'application/json'
+  //       }
+  //     })
+  //     .then(response => response.json())
+  //     .then(data => { 
+  //       setAllPlayers(data.data);
+  //       setIsLoading(false);
+  //     });
+  // }, []);
 
   useEffect(() => {
     setAllPlayersGroups();
