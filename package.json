@@ -1,4 +1,5 @@
 {
+  "homepage": "http://SButterbluemchen.github.io/quidditch-club",
   "name": "quidditch-club",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,6 +51,7 @@
     "eslint": "^8.12.0",
     "eslint-plugin-jest": "^26.1.3",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^3.2.3",
     "jest": "^27.5.1"
   }
 }
